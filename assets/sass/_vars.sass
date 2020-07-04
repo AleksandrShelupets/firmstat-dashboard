@@ -1,0 +1,22 @@
+$default-font: "SFUIDisplay", sans-serif
+$accent: #D82727
+$blue: #009CFC
+
+@function lh($font, $line-height)
+	@return $line-height / $font * 1em
+
+
+@function pw($width, $containerWidth)
+	@return $width * 100 / $containerWidth * 1%
+
+
+@function pb($width, $height)
+	@return $height / $width * 100%
+
+
+@function pvw($width, $vw)
+	@return $width / $vw * 100vw 
+
+
+%anim
+	transition: 250ms ease-in-out

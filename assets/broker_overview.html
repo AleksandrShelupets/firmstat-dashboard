@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>FIRMSTAT</title>
+  <meta name="description" content="">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <link rel="stylesheet" href="css/global.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+  <div id="page-wrap">
+    <header class="header header-short">
+      <div class="container-fluid">
+        <div class="row">
+          <a href="http://firstat.com/" class="header__logo"><b>firm</b>stat</a>
+          <div class="header__right">
+            <div class="header__user">
+              <div class="header__user__ico">
+                <svg width="17" height="20" class="svg-ico">
+                  <use xlink:href="img/sprite.svg#ico-user"></use>
+                </svg>
+                <div class="header__user__list">
+                  <ul>
+                    <li><a href="#">My Subscription</a></li>
+                    <li><a href="#">Dashboard</a></li>
+                    <li><a href="#">Log Out</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <a href="#" class="btn btn-green">Upgrade</a>
+          </div>
+        </div>
+      </div>
+    </header>
+    <section class="dashboard">
+      <div class="dashboard__sidebar">
+        <div class="dashboard__plan">
+          <div class="dashboard__plan__label">Plan</div>
+          <div class="dashboard__plan__val">Forex + Crypto + BO</div>
+          <a href="#" class="btn btn-blue">Upgrade</a>
+        </div>
+        <div class="dashboard__nav">
+          <ul>
+            <li>
+              <a href="#"><svg width="21" height="20" class="svg-ico">
+                  <use xlink:href="img/sprite.svg#ico-home"></use>
+                </svg>Dashboard</a>
+            </li>
+            <li class="submenu">
+              <a href="#">Traffic Insights</a>
+              <ul>
+                <li><a href="#">Geo Destribution</a></li>
+                <li><a href="#">Marketing Channels</a></li>
+              </ul>
+            </li>
+            <li class="submenu">
+              <a href="#">Marketing Materiais</a>
+              <ul>
+                <li><a href="#">Search Ads</a></li>
+                <li><a href="#">Landing Pages</a></li>
+                <li><a href="#">Banners</a></li>
+                <li><a href="#">Mobile apps</a></li>
+              </ul>
+            </li>
+            <li class="submenu">
+              <a href="#">Social Media</a>
+              <ul>
+                <li><a href="#">Pages</a></li>
+                <li><a href="#">Feed</a></li>
+              </ul>
+            </li>
+            <li class="submenu">
+              <a href="#">Email Marketing</a>
+              <ul>
+                <li><a href="#">Automatic Emails</a></li>
+                <li><a href="#">Custom Emails</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="dashboard__content">
+        <div class="dashboard__header">
+          <h1 class="page_title">Broker Overview</h1>
+          <div class="dashboard__search">
+            <div class="dashboard__search__overlay"></div>
+            <form class="dashboard__search__form">
+              <input type="text" class="dashboard__search__input" placeholder="Enter the brand name">
+              <button class="btn btn-accent dashboard__search__submit">
+                <svg width="21" height="20" class="svg-ico">
+                  <use xlink:href="img/sprite.svg#ico-search"></use>
+                </svg>Search
+              </button>
+            </form>
+            <div class="dashboard__search__result">
+              <ul>
+                <li class="add"><a href="#"><span>Requesting adding “FXproRexx”</span></a></li>
+                <li><a href="#"><span class="logo"><img src="img/image26.png" alt=""></span>Fxpro</a></li>
+                <li><a href="#"><span class="logo"><img src="img/linkedin.png" alt=""></span>Fxpro</a></li>
+                <li><a href="#"><span class="logo"><img src="img/clients/windsorbrokers.png" alt=""></span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati a, harum placeat sit nam! Tempore neque nobis, quam fugit inventore quod doloribus debitis adipisci laborum quis reiciendis, ipsam ea assumenda.</a></li>
+                <li><a href="#"><span class="logo"><img src="img/clients/iforex.png" alt=""></span>Fxpro</a></li>
+                <li><a href="#"><span class="logo"><img src="img/clients/iforex.png" alt=""></span>Fxpro</a></li>
+                <li><a href="#"><span class="logo"><img src="img/clients/iforex.png" alt=""></span>Fxpro</a></li>
+                <li><a href="#"><span class="logo"><img src="img/clients/iforex.png" alt=""></span>Fxpro</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="popup popup-small" id="popup-request-adding" style="display: none;">
+            <div class="popup__title">Thank You!</div>
+            <div class="popup__subtitle">We will research and add "FXproRexx" shortly</div>
+            <button class="btn btn-blue" data-fancybox-close>Ok</button>
+          </div>
+        </div>
+        <div class="dashboard__main">
+          <div class="dashboard__monitor">
+            <div class="dashboard__monitor__title">Firmstat Monitor Index</div>
+            <div class="dashboard__monitor__index">
+              <div class="itm">
+                <div class="val">195</div>
+                <div class="label">Brokers</div>
+              </div>
+              <div class="itm">
+                <div class="val">1195</div>
+                <div class="label">Social Media Pages</div>
+              </div>
+              <div class="itm">
+                <div class="val">12 003</div>
+                <div class="label">Marketing Materials</div>
+              </div>
+            </div>
+            <div class="dashboard__monitor__graphs">
+              <div class="graph">
+                <div class="graph__title">Domains Total</div>
+                <canvas id="chart-1" width="430" height="165"></canvas>
+              </div>
+              <div class="graph">
+                <div class="graph__title">Landing Pages Total</div>
+                <canvas id="chart-2" width="430" height="165"></canvas>
+              </div>
+              <div class="graph">
+                <div class="graph__title">Social Media Pages Total</div>
+                <canvas id="chart-3" width="430" height="165"></canvas>
+              </div>
+              <div class="graph">
+                <div class="graph__title">Search Ads Total</div>
+                <canvas id="chart-4" width="430" height="165"></canvas>
+              </div>
+              <div class="graph">
+                <div class="graph__title">Banners Total</div>
+                <canvas id="chart-5" width="430" height="165"></canvas>
+              </div>
+              <div class="graph">
+                <div class="graph__title">Emails Total</div>
+                <canvas id="chart-6" width="430" height="165"></canvas>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="footer footer-short">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="footer__info">
+            <p class="copyright">© 2020 Firmstat. All Rights Reserved</p>
+            <p>Competitive Analysis Tool For Forex Marketers</p>
+          </div>
+          <div class="footer__links">
+            <div class="footer__policy">
+              <a href="http://firstat.com/">Cookie Policy</a>
+              <a href="http://firstat.com/">Privacy Police</a>
+            </div>
+            <div class="footer__contacts">
+              <a href="mailto:support@firmstat.com" class="mail">support@firmstat.com</a>
+              <a href="#" target="_blank"><img src="img/linkedin.png" alt=""></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+  <script src="js/jquery.min.js"></script>
+  <script src="js/jquery.fancybox.js"></script>
+  <script src="js/Chart.min.js"></script>
+  <script src="js/common.js"></script>
+  <script>
+  // https://www.chartjs.org/
+  Chart.defaults.global.defaultFontFamily = "SFUIDisplay";
+  Chart.defaults.global.defaultFontSize = 12;
+  Chart.defaults.global.defaultFontColor = '#666';
+  Chart.defaults.global.legend.display = false;
+  Chart.defaults.global.animation.duration = 0;
+  Chart.defaults.global.layout.padding = { left: 15, right: 30, top: 30, bottom: 15 };
+  var ctx1 = document.getElementById('chart-1').getContext('2d');
+  var myChart = new Chart(ctx1, {
+    type: 'line',
+    data: {
+      labels: ['JUL', 'JAN', 'JUL', 'JAN', 'JUL', 'JAN', 'JUL'],
+      datasets: [{
+        data: ['210', '250', '225', '370', '300', '287', '333'],
+        backgroundColor: [
+          'transparent'
+        ],
+        borderColor: [
+          '#009CFC'
+        ],
+        borderWidth: 2
+      }]
+    }
+  });
+  var ctx2 = document.getElementById('chart-2').getContext('2d');
+  var myChart = new Chart(ctx2, {
+    type: 'line',
+    data: {
+      labels: ['JUL', 'JAN', 'JUL', 'JAN', 'JUL', 'JAN', 'JUL'],
+      datasets: [{
+        data: ['210', '250', '225', '370', '300', '287', '333'],
+        backgroundColor: [
+          'transparent'
+        ],
+        borderColor: [
+          '#009CFC'
+        ],
+        borderWidth: 2
+      }]
+    }
+  });
+  var ctx3 = document.getElementById('chart-3').getContext('2d');
+  var myChart = new Chart(ctx3, {
+    type: 'line',
+    data: {
+      labels: ['JUL', 'JAN', 'JUL', 'JAN', 'JUL', 'JAN', 'JUL'],
+      datasets: [{
+        data: ['210', '250', '225', '370', '300', '287', '333'],
+        backgroundColor: [
+          'transparent'
+        ],
+        borderColor: [
+          '#009CFC'
+        ],
+        borderWidth: 2
+      }]
+    }
+  });
+  var ctx4 = document.getElementById('chart-4').getContext('2d');
+  var myChart = new Chart(ctx4, {
+    type: 'line',
+    data: {
+      labels: ['JUL', 'JAN', 'JUL', 'JAN', 'JUL', 'JAN', 'JUL'],
+      datasets: [{
+        data: ['210', '250', '225', '370', '300', '287', '333'],
+        backgroundColor: [
+          'transparent'
+        ],
+        borderColor: [
+          '#009CFC'
+        ],
+        borderWidth: 2
+      }]
+    }
+  });
+  var ctx5 = document.getElementById('chart-5').getContext('2d');
+  var myChart = new Chart(ctx5, {
+    type: 'line',
+    data: {
+      labels: ['JUL', 'JAN', 'JUL', 'JAN', 'JUL', 'JAN', 'JUL'],
+      datasets: [{
+        data: ['210', '250', '225', '370', '300', '287', '333'],
+        backgroundColor: [
+          'transparent'
+        ],
+        borderColor: [
+          '#009CFC'
+        ],
+        borderWidth: 2
+      }]
+    }
+  });
+  var ctx6 = document.getElementById('chart-6').getContext('2d');
+  var myChart = new Chart(ctx6, {
+    type: 'line',
+    data: {
+      labels: ['JUL', 'JAN', 'JUL', 'JAN', 'JUL', 'JAN', 'JUL'],
+      datasets: [{
+        data: ['210', '250', '225', '370', '300', '287', '333'],
+        backgroundColor: [
+          'transparent'
+        ],
+        borderColor: [
+          '#009CFC'
+        ],
+        borderWidth: 2
+      }]
+    }
+  });
+  </script>
+</body>
+
+</html>
