@@ -1,0 +1,642 @@
+.dropdown_filter__label, .checkbox input[type="checkbox"] + i, .checkbox input[type="checkbox"] + i:before, .radio input[type="radio"] + i, .radio input[type="radio"] + i:before, .geo_table .tr:before, .monthpicker__nav li, .monthpicker__nav li:before, .monthpicker__table__cell > span {
+  -webkit-transition: 250ms ease-in-out;
+  -o-transition: 250ms ease-in-out;
+  transition: 250ms ease-in-out; }
+
+.dashboard__header__filter {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: -25px; }
+  .dashboard__header__filter .dropdown_filter {
+    min-width: 200px; }
+  .dashboard__header__filter > * {
+    margin-right: 50px;
+    margin-bottom: 25px; }
+  .dashboard__header__filter .radiogroup {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex; }
+    .dashboard__header__filter .radiogroup .radio:not(:last-child) {
+      margin-right: 30px; }
+
+.dropdown_filter {
+  font-size: 15px;
+  line-height: 1.2em; }
+  .dropdown_filter__label {
+    position: relative;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background-color: #F4F6F8;
+    -webkit-border-radius: 3px;
+            border-radius: 3px;
+    height: 55px;
+    padding: 0 43px 0 20px;
+    cursor: pointer;
+    border: 1px solid transparent;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none; }
+    .dropdown_filter__label:hover {
+      -webkit-box-shadow: 0px 5px 25px rgba(102, 102, 102, 0.1), 0px 10px 25px rgba(102, 102, 102, 0.05);
+              box-shadow: 0px 5px 25px rgba(102, 102, 102, 0.1), 0px 10px 25px rgba(102, 102, 102, 0.05); }
+    .dropdown_filter__label:after {
+      content: '';
+      position: absolute;
+      top: 50%;
+      right: 20px;
+      background-image: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTIiIGhlaWdodD0iNyIgdmlld0JveD0iMCAwIDEyIDciIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxwYXRoIGQ9Ik0xMC45MjczIC0xLjI3OTIxZS0wOEwxMiAxLjA2NzdMNiA3TDcuMDgxMzZlLTA4IDEuMDYxN0wxLjA3MjczIC0xLjMwMzA2ZS0wN0w2IDQuODc2NjFMMTAuOTI3MyAtMS4yNzkyMWUtMDhaIiBmaWxsPSIjMkQzNDM2Ii8+Cjwvc3ZnPgo=");
+      width: 12px;
+      height: 7px;
+      margin-top: -3.5px;
+      opacity: 0.75; }
+  .dropdown_filter__ico {
+    color: #666;
+    -webkit-flex-shrink: 0;
+        -ms-flex-negative: 0;
+            flex-shrink: 0;
+    margin-right: 8px; }
+  .dropdown_filter__num {
+    -webkit-flex-shrink: 0;
+        -ms-flex-negative: 0;
+            flex-shrink: 0;
+    min-width: 23px;
+    padding: 0 4px;
+    height: 23px;
+    -webkit-border-radius: 12px;
+            border-radius: 12px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    color: #009CFC;
+    font-size: 12px;
+    font-weight: 600;
+    margin-left: auto;
+    background-color: #F4F6F8; }
+    .dropdown_filter__num:empty {
+      background-color: transparent; }
+  .dropdown_filter__list {
+    position: absolute;
+    max-height: -webkit-calc(100vh - 426px);
+    max-height: calc(100vh - 426px);
+    overflow-y: auto;
+    z-index: -1;
+    left: 0;
+    right: 0;
+    top: 100%;
+    background-color: #fff;
+    z-index: 1;
+    padding: 40px 70px;
+    visibility: hidden;
+    opacity: 0;
+    -webkit-transition: opacity 250ms ease-in-out, visibility 250ms ease-in-out;
+    -o-transition: opacity 250ms ease-in-out, visibility 250ms ease-in-out;
+    transition: opacity 250ms ease-in-out, visibility 250ms ease-in-out; }
+    .dropdown_filter__list:before {
+      content: '';
+      position: absolute;
+      bottom: 100%;
+      left: 0;
+      right: 0;
+      z-index: 1;
+      height: 50px;
+      -webkit-box-shadow: 0px 5px 25px rgba(102, 102, 102, 0.1);
+              box-shadow: 0px 5px 25px rgba(102, 102, 102, 0.1); }
+    .dropdown_filter__list__header {
+      margin-bottom: 30px; }
+    .dropdown_filter__list__columns {
+      -webkit-column-gap: 33px;
+         -moz-column-gap: 33px;
+              column-gap: 33px; }
+      .dropdown_filter__list__columns .checkbox {
+        margin-bottom: 10px;
+        -webkit-column-break-inside: avoid;
+           page-break-inside: avoid;
+                break-inside: avoid; }
+      .dropdown_filter__list__columns-7 {
+        -webkit-columns: 7;
+           -moz-columns: 7;
+                columns: 7; }
+      .dropdown_filter__list__columns-6 {
+        -webkit-columns: 6;
+           -moz-columns: 6;
+                columns: 6; }
+      .dropdown_filter__list__columns .flag-icon {
+        margin-right: 10px;
+        -webkit-transform: translateY(-1px);
+            -ms-transform: translateY(-1px);
+                transform: translateY(-1px); }
+  .dropdown_filter.active .dropdown_filter__list {
+    visibility: visible;
+    opacity: 1; }
+  .dropdown_filter.active .dropdown_filter__label {
+    background-color: #fff;
+    -webkit-box-shadow: 0px 5px 25px rgba(102, 102, 102, 0.1), 0px 10px 25px rgba(102, 102, 102, 0.05);
+            box-shadow: 0px 5px 25px rgba(102, 102, 102, 0.1), 0px 10px 25px rgba(102, 102, 102, 0.05); }
+  .dropdown_filter.active .dropdown_filter__label:after {
+    -webkit-transform: scaleY(-1);
+        -ms-transform: scaleY(-1);
+            transform: scaleY(-1);
+    opacity: 1; }
+  .dropdown_filter.no-empty .dropdown_filter__label {
+    background-color: #fff;
+    border: 1px solid #E7E7E7; }
+
+.dashboard__content_overlay {
+  position: absolute;
+  z-index: 9;
+  top: -100px;
+  left: -100px;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(47, 47, 47, 0.2);
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: opacity 250ms ease-in-out, visibility 250ms ease-in-out;
+  -o-transition: opacity 250ms ease-in-out, visibility 250ms ease-in-out;
+  transition: opacity 250ms ease-in-out, visibility 250ms ease-in-out; }
+  .dashboard__content_overlay.active {
+    visibility: visible;
+    opacity: 1; }
+
+.checkbox {
+  font-size: 15px;
+  line-height: 1.6em;
+  color: #666;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none; }
+  .checkbox input[type="checkbox"] {
+    width: 22px;
+    height: 22px;
+    position: absolute;
+    left: 0;
+    top: 1px;
+    margin: 0;
+    opacity: 0; }
+  .checkbox input[type="checkbox"] + i {
+    width: 22px;
+    height: 22px;
+    background-color: #fff;
+    border: 1px solid rgba(102, 102, 102, 0.1);
+    -webkit-border-radius: 2px;
+            border-radius: 2px;
+    display: inline-block;
+    background-color: #F4F6F8;
+    position: relative;
+    -webkit-flex-shrink: 0;
+        -ms-flex-negative: 0;
+            flex-shrink: 0;
+    margin-right: 12px; }
+    .checkbox input[type="checkbox"] + i:before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTIiIGhlaWdodD0iMTAiIHZpZXdCb3g9IjAgMCAxMiAxMCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTMuOTE4NjkgNi45MDQxMkwxLjE3NzE5IDQuMTYyNjJMMCA1LjMzOTgxTDMuOTE4NjkgOS4yNTg1TDEyIDEuMTc3MTlMMTAuODIyOCAwTDMuOTE4NjkgNi45MDQxMloiIGZpbGw9IiMwMDlDRkMiLz4KPC9zdmc+Cg==") center center no-repeat;
+      opacity: 0; }
+  .checkbox input[type="checkbox"]:checked + i {
+    border-color: rgba(102, 102, 102, 0.3); }
+  .checkbox input[type="checkbox"]:checked + i:before {
+    opacity: 1; }
+  .checkbox input[type="checkbox"]:checked + i + p {
+    color: #2D3436; }
+
+.radio {
+  font-size: 15px;
+  line-height: 1.6em;
+  color: #666;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none; }
+  .radio input[type="radio"] {
+    width: 22px;
+    height: 22px;
+    position: absolute;
+    left: 0;
+    top: 1px;
+    margin: 0;
+    opacity: 0; }
+  .radio input[type="radio"] + i {
+    width: 22px;
+    height: 22px;
+    background-color: #fff;
+    border: 1px solid rgba(102, 102, 102, 0.1);
+    -webkit-border-radius: 50%;
+            border-radius: 50%;
+    display: inline-block;
+    background-color: #F4F6F8;
+    position: relative;
+    -webkit-flex-shrink: 0;
+        -ms-flex-negative: 0;
+            flex-shrink: 0;
+    margin-right: 12px; }
+    .radio input[type="radio"] + i:before {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 8px;
+      height: 8px;
+      -webkit-transform: translate(-50%, -50%);
+          -ms-transform: translate(-50%, -50%);
+              transform: translate(-50%, -50%);
+      -webkit-border-radius: 50%;
+              border-radius: 50%;
+      background-color: #009CFC;
+      opacity: 0; }
+  .radio input[type="radio"]:checked + i {
+    border-color: rgba(102, 102, 102, 0.3); }
+  .radio input[type="radio"]:checked + i:before {
+    opacity: 1; }
+  .radio input[type="radio"]:checked + i + p {
+    color: #2D3436; }
+
+.geo_table {
+  font-size: 15px;
+  line-height: 1.2;
+  padding: 0;
+  background-color: #F6F8F9;
+  -webkit-border-radius: 3px;
+          border-radius: 3px;
+  color: #666;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: relative;
+  z-index: 1;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none; }
+  .geo_table_wrap {
+    margin-right: -40px;
+    position: relative;
+    z-index: 1;
+    -webkit-mask-image: -webkit-gradient(linear, left top, right top, color-stop(97%, #000), to(transparent));
+    -webkit-mask-image: -webkit-linear-gradient(left, #000 97%, transparent 100%);
+            mask-image: -webkit-gradient(linear, left top, right top, color-stop(97%, #000), to(transparent));
+            mask-image: linear-gradient(to right, #000 97%, transparent 100%); }
+    .geo_table_wrap .v-header {
+      position: absolute;
+      top: 0px;
+      bottom: 17px;
+      border: 1px solid #000;
+      left: 0px;
+      z-index: 10;
+      width: 141px;
+      color: #666;
+      background-color: #fff;
+      -webkit-border-radius: 3px 0 0 3px;
+              border-radius: 3px 0 0 3px;
+      border: 1px solid #E7E7E7;
+      border-right: 1px solid rgba(231, 231, 231, 0.6); }
+      .geo_table_wrap .v-header .td {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+            -ms-flex-align: center;
+                align-items: center;
+        padding: 9px 20px 12px;
+        height: 68px;
+        border-bottom: 1px solid rgba(231, 231, 231, 0.6); }
+  .geo_table_scroll_wrap {
+    overflow-x: auto; }
+  .geo_table .tr {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    position: relative;
+    z-index: 1; }
+    .geo_table .tr:before {
+      content: '';
+      position: absolute;
+      z-index: -1;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      background-color: #fff;
+      opacity: 0; }
+    .geo_table .tr:hover:before {
+      opacity: 1;
+      -webkit-box-shadow: 0px 5px 25px rgba(102, 102, 102, 0.1), 0px 10px 25px rgba(102, 102, 102, 0.05);
+              box-shadow: 0px 5px 25px rgba(102, 102, 102, 0.1), 0px 10px 25px rgba(102, 102, 102, 0.05); }
+    .geo_table .tr:not(:last-child) .td {
+      border-bottom: 1px solid rgba(231, 231, 231, 0.6); }
+  .geo_table .thead {
+    z-index: 2; }
+    .geo_table .thead:not(.is_stuck) .tr {
+      left: 0 !important; }
+    .geo_table .thead .tr {
+      position: relative;
+      left: 0; }
+    .geo_table .thead .td {
+      height: 69px;
+      border-bottom: 1px solid rgba(231, 231, 231, 0.6);
+      border-top: 1px solid #E7E7E7;
+      position: relative;
+      background-color: #fff;
+      font-weight: 500;
+      -webkit-flex-wrap: nowrap;
+          -ms-flex-wrap: nowrap;
+              flex-wrap: nowrap;
+      padding-top: 23px;
+      padding-bottom: 26px;
+      -webkit-box-align: end;
+      -webkit-align-items: flex-end;
+          -ms-flex-align: end;
+              align-items: flex-end;
+      padding-top: 0; }
+    .geo_table .thead .column_sort {
+      position: absolute;
+      bottom: 2px;
+      left: 50%;
+      -webkit-transform: translateX(-50%);
+          -ms-transform: translateX(-50%);
+              transform: translateX(-50%); }
+  .geo_table .td {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 9px 20px 12px;
+    height: 68px;
+    -webkit-flex-shrink: 0;
+        -ms-flex-negative: 0;
+            flex-shrink: 0;
+    width: 164px;
+    border-right: 1px solid rgba(231, 231, 231, 0.6); }
+    .geo_table .td p {
+      width: 100%; }
+      .geo_table .td p:not(:last-child) {
+        margin-bottom: 5px; }
+    .geo_table .td:first-child {
+      width: 140px;
+      background-color: #fff; }
+    .geo_table .td:last-child {
+      margin-right: -1px; }
+  .geo_table .flag-icon {
+    margin-right: 8px;
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: translateY(-1.5px);
+        -ms-transform: translateY(-1.5px);
+            transform: translateY(-1.5px); }
+  .geo_table .rating-down,
+  .geo_table .rating-up {
+    font-size: 13px;
+    line-height: 23px;
+    margin-left: 6px; }
+  .geo_table-reverse .thead .td {
+    padding: 17px 43px 16px 20px; }
+  .geo_table-reverse .thead .column_sort {
+    left: auto;
+    right: 15px;
+    bottom: 50%;
+    -webkit-transform: translatey(50%);
+        -ms-transform: translatey(50%);
+            transform: translatey(50%); }
+  .geo_table-reverse .v-header .td,
+  .geo_table-reverse .td:first-child {
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    line-height: 1.2;
+    text-align: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding-left: 10px;
+    padding-right: 10px; }
+    .geo_table-reverse .v-header .td .flag-icon,
+    .geo_table-reverse .td:first-child .flag-icon {
+      margin-bottom: 4px; }
+
+.column_sort__btn {
+  width: 18px;
+  height: 9.5px;
+  display: block;
+  border: none;
+  padding: 0;
+  background: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTIiIGhlaWdodD0iNyIgdmlld0JveD0iMCAwIDEyIDciIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxwYXRoIGQ9Ik0xMC45MjczIC0xLjI3OTIxZS0wOEwxMiAxLjA2NzdMNiA3TDcuMDgxMzZlLTA4IDEuMDYxN0wxLjA3MjczIC0xLjMwMzA2ZS0wN0w2IDQuODc2NjFMMTAuOTI3MyAtMS4yNzkyMWUtMDhaIiBmaWxsPSIjMkQzNDM2Ii8+Cjwvc3ZnPgo=") center center no-repeat; }
+  .column_sort__btn.desc {
+    -webkit-transform: scaleY(-1);
+        -ms-transform: scaleY(-1);
+            transform: scaleY(-1); }
+  .column_sort__btn:not(.active) {
+    opacity: 0.3; }
+
+.monthpicker {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 15px;
+  line-height: 1.6em;
+  color: #666;
+  font-weight: 700; }
+  .monthpicker__nav {
+    width: 200px;
+    -webkit-flex-shrink: 0;
+        -ms-flex-negative: 0;
+            flex-shrink: 0;
+    margin-right: 34px; }
+    .monthpicker__nav li {
+      padding: 17.5px 20px;
+      cursor: pointer;
+      position: relative; }
+      .monthpicker__nav li:hover {
+        color: #2D3436; }
+      .monthpicker__nav li:not(:last-child) {
+        border-bottom: 1px solid #E7E7E7; }
+      .monthpicker__nav li:before {
+        content: '';
+        position: absolute;
+        top: 50%;
+        width: 5px;
+        height: 5px;
+        left: 9px;
+        margin-top: -2px;
+        background-color: #D82727;
+        -webkit-border-radius: 50%;
+                border-radius: 50%;
+        opacity: 0; }
+    .monthpicker__nav .active {
+      color: #2D3436; }
+      .monthpicker__nav .active:before {
+        opacity: 1; }
+  .monthpicker__content {
+    display: -webkit-inline-box;
+    display: -webkit-inline-flex;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    padding: 35px 30px 25px;
+    background-color: rgba(244, 246, 248, 0.6); }
+  .monthpicker__table {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex; }
+    .monthpicker__table.route .monthpicker__table__cell.active:before, .monthpicker__table.route .monthpicker__table__cell.active:after {
+      -webkit-transition: opacity 250ms ease-in-out;
+      -o-transition: opacity 250ms ease-in-out;
+      transition: opacity 250ms ease-in-out;
+      opacity: 1; }
+    .monthpicker__table__title {
+      -webkit-border-radius: 3px;
+              border-radius: 3px;
+      z-index: 1;
+      position: absolute;
+      top: 0;
+      left: 50%;
+      -webkit-transform: translate(-50%, -50%);
+          -ms-transform: translate(-50%, -50%);
+              transform: translate(-50%, -50%);
+      font-weight: 400;
+      line-height: 18px;
+      background-color: #fff;
+      padding: 5px 14px; }
+    .monthpicker__table__itm {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      max-width: 376px;
+      -webkit-flex-wrap: wrap;
+          -ms-flex-wrap: wrap;
+              flex-wrap: wrap;
+      padding: 28px 0;
+      cursor: pointer;
+      -webkit-border-radius: 3px;
+              border-radius: 3px;
+      position: relative;
+      background-color: #fff; }
+      .monthpicker__table__itm:not(:last-child) {
+        margin-right: 58px; }
+    .monthpicker__table__cell {
+      width: 25%;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+          -ms-flex-align: center;
+              align-items: center;
+      -webkit-box-pack: center;
+      -webkit-justify-content: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      margin: 1px 0;
+      position: relative; }
+      .monthpicker__table__cell:before, .monthpicker__table__cell:after {
+        content: '';
+        position: absolute;
+        height: 1px;
+        left: 0;
+        right: 0;
+        background-color: #009CFC;
+        opacity: 0; }
+      .monthpicker__table__cell:before {
+        top: 0; }
+      .monthpicker__table__cell:after {
+        bottom: 0; }
+      .monthpicker__table__cell.active > span {
+        background-color: #F4F6F8;
+        color: #2D3436; }
+      .monthpicker__table__cell.first > span, .monthpicker__table__cell.last > span {
+        background-color: #009CFC;
+        color: #fff; }
+      .monthpicker__table__cell.start:before, .monthpicker__table__cell.start:after {
+        left: 50%; }
+      .monthpicker__table__cell.end:before, .monthpicker__table__cell.end:after {
+        right: 50%; }
+      .monthpicker__table__cell > span {
+        height: 44px;
+        width: 44px;
+        -webkit-border-radius: 50%;
+                border-radius: 50%;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+            -ms-flex-align: center;
+                align-items: center;
+        -webkit-box-pack: center;
+        -webkit-justify-content: center;
+            -ms-flex-pack: center;
+                justify-content: center; }
+
+@media (max-width: 1599px) {
+  .monthpicker__nav {
+    width: 160px;
+    margin-right: 25; }
+  .monthpicker__table__itm:not(:last-child) {
+    margin-right: 30px; }
+  .monthpicker__content {
+    padding: 25px 25px 25px; } }

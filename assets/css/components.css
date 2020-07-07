@@ -1355,6 +1355,18 @@
       background-color: #35ecc0; }
     .btn-green:active {
       background-color: #25a989; }
+  .btn-bordered {
+    border: 1px solid #009CFC;
+    color: #009CFC;
+    background-color: transparent;
+    min-width: 120px;
+    height: 37px; }
+    .btn-bordered:hover, .btn-bordered:focus {
+      background-color: #38B3FF;
+      border-color: #38B3FF; }
+    .btn-bordered:active {
+      background-color: #0088DC;
+      border-color: #0088DC; }
 
 .page_title {
   font-weight: 500;

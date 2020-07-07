@@ -234,8 +234,10 @@ img {
               transform: translate(3px, 5px) rotate(-45deg); }
   .header-short {
     position: static;
+    position: relative;
     background-color: #2D3436;
     padding: 0;
+    z-index: 11;
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -261,6 +263,7 @@ img {
 
 .header__user {
   position: relative;
+  z-index: 10;
   display: inline-block;
   vertical-align: middle; }
   .header__user.active .header__user__list {

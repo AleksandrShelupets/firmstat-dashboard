@@ -1,7 +1,7 @@
 @import "vars"
 
 .dashboard
-	min-height: 100vh
+	min-height: calc(100vh - 146px)
 	display: flex
 	background-color: #F4F6F8
 	&__sidebar
@@ -54,6 +54,17 @@
 				display: none
 				a
 					padding: 5px 0 6px
+				li.active
+					position: relative
+					&:before
+						content: ''
+						position: absolute
+						width: 5px
+						height: 5px
+						background-color: $accent
+						border-radius: 50%
+						top: 14px
+						left: -11px
 			.submenu
 				&>a
 					position: relative
@@ -75,14 +86,17 @@
 				&:after
 					transform: scaleY(-1)
 
-
 	&__content
-		padding: 0 40px 0 30px
-		width: 100%
+		margin: 0 40px 0 30px
+		flex-basis: 0
+		flex-grow: 1
+		width: 1px
 	&__header
 		background: #FFFFFF
 		border-radius: 0px 0px 3px 3px
 		padding: 49px 70px 52px 70px
+		position: relative
+		z-index: 10
 		.page_title
 			text-align: left
 			margin-bottom: 46px
@@ -99,7 +113,13 @@
 					height: 20px
 					margin: 0 20px 0 12px
 
-
+	&__title
+		display: flex
+		justify-content: space-between
+		align-items: center
+		margin-bottom: 46px
+		.page_title
+			margin-bottom: 0
 
 	&__search
 		position: relative
@@ -187,8 +207,11 @@
 
 
 	&__main
-		padding: 60px 70px
+		margin: 60px 0
+		position: relative
+		z-index: 1
 	&__monitor
+		padding: 0 70px
 		&__title
 			font-weight: 600
 			font-size: 28px
@@ -321,7 +344,6 @@
 	&:before
 		content: ''
 		display: inline-block
-		align-items: baseline
 		width: 10px
 		height: 10px
 		margin-right: 2px
@@ -553,6 +575,7 @@
 	.dashboard__main
 		padding-left: 0
 		padding-right: 0
+
 
 @media (max-width: 1199px)
 	.dashboard__monitor__graphs .graph

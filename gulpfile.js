@@ -50,7 +50,7 @@ gulp.task('sass', function() {
 
 gulp.task('watch', ['sass', 'browser-sync'], function() {
 	gulp.watch('assets/sass/**/*.sass', ['sass']);
-	gulp.watch(['libs/**/*.js', 'assets/js/common.js'], ['js']);
+	gulp.watch(['libs/**/*.js', 'assets/js/common.js']);
 	gulp.watch('assets/*.html', browsersync.reload)
 });
 

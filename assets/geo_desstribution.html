@@ -1,0 +1,2796 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>FIRMSTAT</title>
+  <meta name="description" content="">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <link rel="stylesheet" href="css/global.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/geo_desstribution.css">
+</head>
+
+<body>
+  <div id="page-wrap">
+    <header class="header header-short">
+      <div class="container-fluid">
+        <div class="row">
+          <a href="http://firstat.com/" class="header__logo"><b>firm</b>stat</a>
+          <div class="header__right">
+            <div class="header__user">
+              <div class="header__user__ico">
+                <svg width="17" height="20" class="svg-ico">
+                  <use xlink:href="img/sprite.svg#ico-user"></use>
+                </svg>
+                <div class="header__user__list">
+                  <ul>
+                    <li><a href="#">My Subscription</a></li>
+                    <li><a href="#">Dashboard</a></li>
+                    <li><a href="#">Log Out</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <a href="#" class="btn btn-green">Upgrade</a>
+          </div>
+        </div>
+      </div>
+    </header>
+    <section class="dashboard">
+      <div class="dashboard__sidebar">
+        <div class="dashboard__plan">
+          <div class="dashboard__plan__label">Plan</div>
+          <div class="dashboard__plan__val">Standard</div>
+          <a href="#" class="btn btn-blue">Upgrade</a>
+        </div>
+        <div class="dashboard__nav">
+          <ul>
+            <li>
+              <a href="#"><svg width="21" height="20" class="svg-ico">
+                  <use xlink:href="img/sprite.svg#ico-home"></use>
+                </svg>Dashboard</a>
+            </li>
+            <li class="submenu active">
+              <a href="#">Traffic Insights</a>
+              <ul>
+                <li class="active"><a href="#">Geo Destribution</a></li>
+                <li><a href="#">Marketing Channels</a></li>
+              </ul>
+            </li>
+            <li class="submenu">
+              <a href="#">Marketing Materiais</a>
+              <ul>
+                <li><a href="#">Search Ads</a></li>
+                <li><a href="#">Landing Pages</a></li>
+                <li><a href="#">Banners</a></li>
+                <li><a href="#">Mobile apps</a></li>
+              </ul>
+            </li>
+            <li class="submenu">
+              <a href="#">Social Media</a>
+              <ul>
+                <li><a href="#">Pages</a></li>
+                <li><a href="#">Feed</a></li>
+              </ul>
+            </li>
+            <li class="submenu">
+              <a href="#">Email Marketing</a>
+              <ul>
+                <li><a href="#">Automatic Emails</a></li>
+                <li><a href="#">Custom Emails</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="dashboard__content_overlay"></div>
+      <div class="dashboard__content">
+        <div class="dashboard__header">
+          <div class="dashboard__title">
+            <h1 class="page_title">Geo Desstribution</h1>
+            <a href="#" class="btn btn-bordered">Export</a>
+          </div>
+          <div class="dashboard__header__filter">
+            <div class="dropdown_filter">
+              <div class="dropdown_filter__label">
+                <div class="dropdown_filter__ico"><svg width="17" height="13" viewBox="0 0 17 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0 11.878C0 11.4291 0.363935 11.0651 0.812872 11.0651H2.61224C3.06118 11.0651 3.42512 11.4291 3.42512 11.878C3.42512 12.3269 3.06118 12.6909 2.61224 12.6909H0.812872C0.363935 12.6909 0 12.3269 0 11.878Z" fill="currentColor" />
+                    <path d="M0 6.3456C0 5.89667 0.363935 5.53273 0.812872 5.53273H2.61224C3.06118 5.53273 3.42512 5.89667 3.42512 6.3456C3.42512 6.79454 3.06118 7.15847 2.61224 7.15847H0.812872C0.363935 7.15847 0 6.79454 0 6.3456Z" fill="currentColor" />
+                    <path d="M0 0.812872C0 0.363936 0.363935 0 0.812872 0H2.61224C3.06118 0 3.42512 0.363936 3.42512 0.812872C3.42512 1.26181 3.06118 1.62574 2.61224 1.62574H0.812872C0.363935 1.62574 0 1.26181 0 0.812872Z" fill="currentColor" />
+                    <path d="M5.65283 11.878C5.65283 11.4291 6.01677 11.0651 6.4657 11.0651H15.3055C15.7544 11.0651 16.1184 11.4291 16.1184 11.878C16.1184 12.3269 15.7544 12.6909 15.3055 12.6909H6.4657C6.01677 12.6909 5.65283 12.3269 5.65283 11.878Z" fill="currentColor" />
+                    <path d="M5.65283 6.3456C5.65283 5.89667 6.01677 5.53273 6.4657 5.53273H15.3055C15.7544 5.53273 16.1184 5.89667 16.1184 6.3456C16.1184 6.79454 15.7544 7.15847 15.3055 7.15847H6.4657C6.01677 7.15847 5.65283 6.79454 5.65283 6.3456Z" fill="currentColor" />
+                    <path d="M5.65283 0.812872C5.65283 0.363936 6.01677 0 6.4657 0H15.3055C15.7544 0 16.1184 0.363936 16.1184 0.812872C16.1184 1.26181 15.7544 1.62574 15.3055 1.62574H6.4657C6.01677 1.62574 5.65283 1.26181 5.65283 0.812872Z" fill="currentColor" />
+                  </svg>
+                </div>
+                Brokers
+                <div class="dropdown_filter__num"></div>
+              </div>
+              <div class="dropdown_filter__list">
+                <div class="dropdown_filter__list__header">
+                  <label class="checkbox checkbox-select_all"><input type="checkbox"><i></i>
+                    <p>Select All</p>
+                  </label>
+                </div>
+                <div class="dropdown_filter__list__columns dropdown_filter__list__columns-6">
+                  <label class="checkbox"><input type="checkbox"><i></i>
+                    <p>AAFX Trading</p>
+                  </label>
+                  <label class="checkbox"><input type="checkbox"><i></i>
+                    <p>AccentForex</p>
+                  </label>
+                  <label class="checkbox"><input type="checkbox"><i></i>
+                    <p>ActivTrades</p>
+                  </label>
+                  <label class="checkbox"><input type="checkbox"><i></i>
+                    <p>Admiral Markets</p>
+                  </label>
+                  <label class="checkbox"><input type="checkbox"><i></i>
+                    <p>ADS Securities</p>
+                  </label>
+                  <label class="checkbox"><input type="checkbox"><i></i>
+                    <p>Aetos</p>
+                  </label>
+                  <label class="checkbox"><input type="checkbox"><i></i>
+                    <p>Alpari</p>
+                  </label>
+                  <label class="checkbox"><input type="checkbox"><i></i>
+                    <p>Alpho</p>
+                  </label>
+                  <label class="checkbox"><input type="checkbox"><i></i>
+                    <p>Amana Capital</p>
+                  </label>
+                  <label class="checkbox"><input type="checkbox"><i></i>
+                    <p>AMarkets</p>
+                  </label>
+                  <label class="checkbox"><input type="checkbox"><i></i>
+                    <p>Arum Capital</p>
+                  </label>
+                  <label class="checkbox"><input type="checkbox"><i></i>
+                    <p>ATC Brokers</p>
+                  </label>
+                  <label class="checkbox"><input type="checkbox"><i></i>
+                    <p>ATFX</p>
+                  </label>
+                  <label class="checkbox"><input type="checkbox"><i></i>
+                    <p>AvaTrade</p>
+                  </label>
+                  <label class="checkbox"><input type="checkbox"><i></i>
+                    <p>AxiTrader</p>
+                  </label>
+                  <label class="checkbox"><input type="checkbox"><i></i>
+                    <p>BCS Forex</p>
+                  </label>
+                  <label class="checkbox"><input type="checkbox"><i></i>
+                    <p>Binomo</p>
+                  </label>
+                  <label class="checkbox"><input type="checkbox"><i></i>
+                    <p>Bithoven</p>
+                  </label>
+                  <label class="checkbox"><input type="checkbox"><i></i>
+                    <p>Blackwell Global</p>
+                  </label>
+                  <label class="checkbox"><input type="checkbox"><i></i>
+                    <p>BNFX</p>
+                  </label>
+                  <label class="checkbox"><input type="checkbox"><i></i>
+                    <p>Capex</p>
+                  </label>
+                  <label class="checkbox"><input type="checkbox"><i></i>
+                    <p>Capital.com</p>
+                  </label>
+                  <label class="checkbox"><input type="checkbox"><i></i>
+                    <p>CM Trading</p>
+                  </label>
+                  <label class="checkbox"><input type="checkbox"><i></i>
+                    <p>CMC Markets</p>
+                  </label>
+                  <label class="checkbox"><input type="checkbox"><i></i>
+                    <p>CMSTrader</p>
+                  </label>
+                  <label class="checkbox"><input type="checkbox"><i></i>
+                    <p>Coinexx</p>
+                  </label>
+                  <label class="checkbox"><input type="checkbox"><i></i>
+                    <p>Colmex Pro</p>
+                  </label>
+                  <label class="checkbox"><input type="checkbox"><i></i>
+                    <p>Core Spreads</p>
+                  </label>
+                  <label class="checkbox"><input type="checkbox"><i></i>
+                    <p>Crypto Altum</p>
+                  </label>
+                  <label class="checkbox"><input type="checkbox"><i></i>
+                    <p>Crypto Rocket</p>
+                  </label>
+                  <label class="checkbox"><input type="checkbox"><i></i>
+                    <p>DF Markets</p>
+                  </label>
+                  <label class="checkbox"><input type="checkbox"><i></i>
+                    <p>DIF Broker</p>
+                  </label>
+                  <label class="checkbox"><input type="checkbox"><i></i>
+                    <p>Dukascopy</p>
+                  </label>
+                  <label class="checkbox"><input type="checkbox"><i></i>
+                    <p>EagleFX</p>
+                  </label>
+                  <label class="checkbox"><input type="checkbox"><i></i>
+                    <p>EasyMarkets</p>
+                  </label>
+                  <label class="checkbox"><input type="checkbox"><i></i>
+                    <p>Eightcap</p>
+                  </label>
+                  <label class="checkbox"><input type="checkbox"><i></i>
+                    <p>ETFinance</p>
+                  </label>
+                  <label class="checkbox"><input type="checkbox"><i></i>
+                    <p>eToro</p>
+                  </label>
+                  <label class="checkbox"><input type="checkbox"><i></i>
+                    <p>ETX Capital</p>
+                  </label>
+                  <label class="checkbox"><input type="checkbox"><i></i>
+                    <p>EverFX</p>
+                  </label>
+                  <label class="checkbox"><input type="checkbox"><i></i>
+                    <p>Exante</p>
+                  </label>
+                  <label class="checkbox"><input type="checkbox"><i></i>
+                    <p>eXcentral</p>
+                  </label>
+                  <label class="checkbox"><input type="checkbox"><i></i>
+                    <p>Exness</p>
+                  </label>
+                  <label class="checkbox"><input type="checkbox"><i></i>
+                    <p>FBS</p>
+                  </label>
+                  <label class="checkbox"><input type="checkbox"><i></i>
+                    <p>FIBO Group</p>
+                  </label>
+                  <label class="checkbox"><input type="checkbox"><i></i>
+                    <p>Fidelis</p>
+                  </label>
+                  <label class="checkbox"><input type="checkbox"><i></i>
+                    <p>Fimax</p>
+                  </label>
+                  <label class="checkbox"><input type="checkbox"><i></i>
+                    <p>Finexo</p>
+                  </label>
+                  <label class="checkbox"><input type="checkbox"><i></i>
+                    <p>Finotec</p>
+                  </label>
+                  <label class="checkbox"><input type="checkbox"><i></i>
+                    <p>FOREX.com</p>
+                  </label>
+                  <label class="checkbox"><input type="checkbox"><i></i>
+                    <p>Forex4you</p>
+                  </label>
+                  <label class="checkbox"><input type="checkbox"><i></i>
+                    <p>ForexCT</p>
+                  </label>
+                  <label class="checkbox"><input type="checkbox"><i></i>
+                    <p>Fort Financial Services</p>
+                  </label>
+                  <label class="checkbox"><input type="checkbox"><i></i>
+                    <p>FP Markets</p>
+                  </label>
+                  <label class="checkbox"><input type="checkbox"><i></i>
+                    <p>FreshForex</p>
+                  </label>
+                  <label class="checkbox"><input type="checkbox"><i></i>
+                    <p>FX Giants</p>
+                  </label>
+                  <label class="checkbox"><input type="checkbox"><i></i>
+                    <p>FXCC</p>
+                  </label>
+                  <label class="checkbox"><input type="checkbox"><i></i>
+                    <p>FXCM</p>
+                  </label>
+                  <label class="checkbox"><input type="checkbox"><i></i>
+                    <p>FXDD</p>
+                  </label>
+                  <label class="checkbox"><input type="checkbox"><i></i>
+                    <p>FXFlat</p>
+                  </label>
+                  <label class="checkbox"><input type="checkbox"><i></i>
+                    <p>FxGlory</p>
+                  </label>
+                  <label class="checkbox"><input type="checkbox"><i></i>
+                    <p>FxGrow</p>
+                  </label>
+                  <label class="checkbox"><input type="checkbox"><i></i>
+                    <p>FXOpen</p>
+                  </label>
+                  <label class="checkbox"><input type="checkbox"><i></i>
+                    <p>FXPIG</p>
+                  </label>
+                  <label class="checkbox"><input type="checkbox"><i></i>
+                    <p>FXPRIMUS</p>
+                  </label>
+                  <label class="checkbox"><input type="checkbox"><i></i>
+                    <p>Fxpro</p>
+                  </label>
+                  <label class="checkbox"><input type="checkbox"><i></i>
+                    <p>FXTM</p>
+                  </label>
+                  <label class="checkbox"><input type="checkbox"><i></i>
+                    <p>GAIN Capital</p>
+                  </label>
+                  <label class="checkbox"><input type="checkbox"><i></i>
+                    <p>GCI</p>
+                  </label>
+                  <label class="checkbox"><input type="checkbox"><i></i>
+                    <p>Gerchik&Co</p>
+                  </label>
+                  <label class="checkbox"><input type="checkbox"><i></i>
+                    <p>GKFX</p>
+                  </label>
+                  <label class="checkbox"><input type="checkbox"><i></i>
+                    <p>Gomarkets</p>
+                  </label>
+                  <label class="checkbox"><input type="checkbox"><i></i>
+                    <p>Grand Capital</p>
+                  </label>
+                  <label class="checkbox"><input type="checkbox"><i></i>
+                    <p>Hantec Markets</p>
+                  </label>
+                  <label class="checkbox"><input type="checkbox"><i></i>
+                    <p>HFTrading</p>
+                  </label>
+                  <label class="checkbox"><input type="checkbox"><i></i>
+                    <p>HMS Markets</p>
+                  </label>
+                  <label class="checkbox"><input type="checkbox"><i></i>
+                    <p>HonorFX</p>
+                  </label>
+                  <label class="checkbox"><input type="checkbox"><i></i>
+                    <p>HotForex</p>
+                  </label>
+                  <label class="checkbox"><input type="checkbox"><i></i>
+                    <p>HQBroker</p>
+                  </label>
+                  <label class="checkbox"><input type="checkbox"><i></i>
+                    <p>HYCM</p>
+                  </label>
+                  <label class="checkbox"><input type="checkbox"><i></i>
+                    <p>IC Markets</p>
+                  </label>
+                  <label class="checkbox"><input type="checkbox"><i></i>
+                    <p>ICM Capital</p>
+                  </label>
+                  <label class="checkbox"><input type="checkbox"><i></i>
+                    <p>IFC Markets</p>
+                  </label>
+                  <label class="checkbox"><input type="checkbox"><i></i>
+                    <p>iFOREX</p>
+                  </label>
+                  <label class="checkbox"><input type="checkbox"><i></i>
+                    <p>IG Markets</p>
+                  </label>
+                  <label class="checkbox"><input type="checkbox"><i></i>
+                    <p>INGOT</p>
+                  </label>
+                  <label class="checkbox"><input type="checkbox"><i></i>
+                    <p>InstaForex</p>
+                  </label>
+                  <label class="checkbox"><input type="checkbox"><i></i>
+                    <p>Interactive Brokers Group</p>
+                  </label>
+                  <label class="checkbox"><input type="checkbox"><i></i>
+                    <p>Investous</p>
+                  </label>
+                  <label class="checkbox"><input type="checkbox"><i></i>
+                    <p>IQ Option</p>
+                  </label>
+                  <label class="checkbox"><input type="checkbox"><i></i>
+                    <p>IronFX</p>
+                  </label>
+                  <label class="checkbox"><input type="checkbox"><i></i>
+                    <p>ITBFX</p>
+                  </label>
+                  <label class="checkbox"><input type="checkbox"><i></i>
+                    <p>ITRADER</p>
+                  </label>
+                  <label class="checkbox"><input type="checkbox"><i></i>
+                    <p>JAFX</p>
+                  </label>
+                  <label class="checkbox"><input type="checkbox"><i></i>
+                    <p>JFD</p>
+                  </label>
+                  <label class="checkbox"><input type="checkbox"><i></i>
+                    <p>Just2Trade</p>
+                  </label>
+                  <label class="checkbox"><input type="checkbox"><i></i>
+                    <p>JustForex</p>
+                  </label>
+                  <label class="checkbox"><input type="checkbox"><i></i>
+                    <p>Kridex</p>
+                  </label>
+                  <label class="checkbox"><input type="checkbox"><i></i>
+                    <p>LBLV</p>
+                  </label>
+                  <label class="checkbox"><input type="checkbox"><i></i>
+                    <p>LCG</p>
+                  </label>
+                  <label class="checkbox"><input type="checkbox"><i></i>
+                    <p>LegacyFX</p>
+                  </label>
+                  <label class="checkbox"><input type="checkbox"><i></i>
+                    <p>LH Crypto</p>
+                  </label>
+                  <label class="checkbox"><input type="checkbox"><i></i>
+                    <p>Libertex</p>
+                  </label>
+                  <label class="checkbox"><input type="checkbox"><i></i>
+                    <p>LiteForex</p>
+                  </label>
+                  <label class="checkbox"><input type="checkbox"><i></i>
+                    <p>Markets Cube</p>
+                  </label>
+                  <label class="checkbox"><input type="checkbox"><i></i>
+                    <p>Markets.com</p>
+                  </label>
+                  <label class="checkbox"><input type="checkbox"><i></i>
+                    <p>MultiBank</p>
+                  </label>
+                  <label class="checkbox"><input type="checkbox"><i></i>
+                    <p>Naga</p>
+                  </label>
+                  <label class="checkbox"><input type="checkbox"><i></i>
+                    <p>NordFX</p>
+                  </label>
+                  <label class="checkbox"><input type="checkbox"><i></i>
+                    <p>NPBFX</p>
+                  </label>
+                  <label class="checkbox"><input type="checkbox"><i></i>
+                    <p>Oanda</p>
+                  </label>
+                  <label class="checkbox"><input type="checkbox"><i></i>
+                    <p>OctaFX</p>
+                  </label>
+                  <label class="checkbox"><input type="checkbox"><i></i>
+                    <p>Olymp Trade</p>
+                  </label>
+                  <label class="checkbox"><input type="checkbox"><i></i>
+                    <p>Orbex</p>
+                  </label>
+                  <label class="checkbox"><input type="checkbox"><i></i>
+                    <p>Ospreyfx</p>
+                  </label>
+                  <label class="checkbox"><input type="checkbox"><i></i>
+                    <p>PaxForex</p>
+                  </label>
+                  <label class="checkbox"><input type="checkbox"><i></i>
+                    <p>Pepperstone</p>
+                  </label>
+                  <label class="checkbox"><input type="checkbox"><i></i>
+                    <p>Plus500</p>
+                  </label>
+                  <label class="checkbox"><input type="checkbox"><i></i>
+                    <p>PrimeXBT</p>
+                  </label>
+                  <label class="checkbox"><input type="checkbox"><i></i>
+                    <p>ProfitiX</p>
+                  </label>
+                  <label class="checkbox"><input type="checkbox"><i></i>
+                    <p>QuestradeFX</p>
+                  </label>
+                  <label class="checkbox"><input type="checkbox"><i></i>
+                    <p>RoboForex</p>
+                  </label>
+                  <label class="checkbox"><input type="checkbox"><i></i>
+                    <p>ROinvesting</p>
+                  </label>
+                  <label class="checkbox"><input type="checkbox"><i></i>
+                    <p>Samco</p>
+                  </label>
+                  <label class="checkbox"><input type="checkbox"><i></i>
+                    <p>Saxo Bank</p>
+                  </label>
+                  <label class="checkbox"><input type="checkbox"><i></i>
+                    <p>SGT Markets</p>
+                  </label>
+                  <label class="checkbox"><input type="checkbox"><i></i>
+                    <p>SimpleFX</p>
+                  </label>
+                  <label class="checkbox"><input type="checkbox"><i></i>
+                    <p>Spreadco</p>
+                  </label>
+                  <label class="checkbox"><input type="checkbox"><i></i>
+                    <p>Stratton Markets</p>
+                  </label>
+                  <label class="checkbox"><input type="checkbox"><i></i>
+                    <p>Sucden</p>
+                  </label>
+                  <label class="checkbox"><input type="checkbox"><i></i>
+                    <p>Swissquote</p>
+                  </label>
+                  <label class="checkbox"><input type="checkbox"><i></i>
+                    <p>TD Ameritrade</p>
+                  </label>
+                  <label class="checkbox"><input type="checkbox"><i></i>
+                    <p>TeleTrade</p>
+                  </label>
+                  <label class="checkbox"><input type="checkbox"><i></i>
+                    <p>Tickmill</p>
+                  </label>
+                  <label class="checkbox"><input type="checkbox"><i></i>
+                    <p>Titan FX</p>
+                  </label>
+                  <label class="checkbox"><input type="checkbox"><i></i>
+                    <p>Trade360</p>
+                  </label>
+                  <label class="checkbox"><input type="checkbox"><i></i>
+                    <p>TradeFW</p>
+                  </label>
+                  <label class="checkbox"><input type="checkbox"><i></i>
+                    <p>Traders Way</p>
+                  </label>
+                  <label class="checkbox"><input type="checkbox"><i></i>
+                    <p>Trading.com</p>
+                  </label>
+                  <label class="checkbox"><input type="checkbox"><i></i>
+                    <p>TusarFX</p>
+                  </label>
+                  <label class="checkbox"><input type="checkbox"><i></i>
+                    <p>UFXMarkets</p>
+                  </label>
+                  <label class="checkbox"><input type="checkbox"><i></i>
+                    <p>Umarkets</p>
+                  </label>
+                  <label class="checkbox"><input type="checkbox"><i></i>
+                    <p>Uptos</p>
+                  </label>
+                  <label class="checkbox"><input type="checkbox"><i></i>
+                    <p>USG</p>
+                  </label>
+                  <label class="checkbox"><input type="checkbox"><i></i>
+                    <p>Vantage FX</p>
+                  </label>
+                  <label class="checkbox"><input type="checkbox"><i></i>
+                    <p>Vestle</p>
+                  </label>
+                  <label class="checkbox"><input type="checkbox"><i></i>
+                    <p>Vlom</p>
+                  </label>
+                  <label class="checkbox"><input type="checkbox"><i></i>
+                    <p>Windsor Brokers</p>
+                  </label>
+                  <label class="checkbox"><input type="checkbox"><i></i>
+                    <p>XM</p>
+                  </label>
+                  <label class="checkbox"><input type="checkbox"><i></i>
+                    <p>XTB</p>
+                  </label>
+                  <label class="checkbox"><input type="checkbox"><i></i>
+                    <p>Yadix</p>
+                  </label>
+                  <label class="checkbox"><input type="checkbox"><i></i>
+                    <p>24option</p>
+                  </label>
+                  <label class="checkbox"><input type="checkbox"><i></i>
+                    <p>770capital</p>
+                  </label>
+                </div>
+              </div>
+            </div>
+            <div class="dropdown_filter">
+              <div class="dropdown_filter__label">
+                <div class="dropdown_filter__ico"><svg width="17" height="13" viewBox="0 0 17 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0 11.878C0 11.4291 0.363935 11.0651 0.812872 11.0651H2.61224C3.06118 11.0651 3.42512 11.4291 3.42512 11.878C3.42512 12.3269 3.06118 12.6909 2.61224 12.6909H0.812872C0.363935 12.6909 0 12.3269 0 11.878Z" fill="currentColor" />
+                    <path d="M0 6.3456C0 5.89667 0.363935 5.53273 0.812872 5.53273H2.61224C3.06118 5.53273 3.42512 5.89667 3.42512 6.3456C3.42512 6.79454 3.06118 7.15847 2.61224 7.15847H0.812872C0.363935 7.15847 0 6.79454 0 6.3456Z" fill="currentColor" />
+                    <path d="M0 0.812872C0 0.363936 0.363935 0 0.812872 0H2.61224C3.06118 0 3.42512 0.363936 3.42512 0.812872C3.42512 1.26181 3.06118 1.62574 2.61224 1.62574H0.812872C0.363935 1.62574 0 1.26181 0 0.812872Z" fill="currentColor" />
+                    <path d="M5.65283 11.878C5.65283 11.4291 6.01677 11.0651 6.4657 11.0651H15.3055C15.7544 11.0651 16.1184 11.4291 16.1184 11.878C16.1184 12.3269 15.7544 12.6909 15.3055 12.6909H6.4657C6.01677 12.6909 5.65283 12.3269 5.65283 11.878Z" fill="currentColor" />
+                    <path d="M5.65283 6.3456C5.65283 5.89667 6.01677 5.53273 6.4657 5.53273H15.3055C15.7544 5.53273 16.1184 5.89667 16.1184 6.3456C16.1184 6.79454 15.7544 7.15847 15.3055 7.15847H6.4657C6.01677 7.15847 5.65283 6.79454 5.65283 6.3456Z" fill="currentColor" />
+                    <path d="M5.65283 0.812872C5.65283 0.363936 6.01677 0 6.4657 0H15.3055C15.7544 0 16.1184 0.363936 16.1184 0.812872C16.1184 1.26181 15.7544 1.62574 15.3055 1.62574H6.4657C6.01677 1.62574 5.65283 1.26181 5.65283 0.812872Z" fill="currentColor" />
+                  </svg>
+                </div>
+                Countries
+                <div class="dropdown_filter__num"></div>
+              </div>
+              <div class="dropdown_filter__list">
+                <div class="dropdown_filter__list__header">
+                  <label class="checkbox checkbox-select_all"><input type="checkbox"><i></i>
+                    <p>Select All</p>
+                  </label>
+                </div>
+                <div class="dropdown_filter__list__columns dropdown_filter__list__columns-7">
+                  <label class="checkbox"><input type="checkbox"><i></i>
+                    <p><span class="flag-icon flag-icon-us"></span>United States</p>
+                  </label>
+                  <label class="checkbox"><input type="checkbox"><i></i>
+                    <p><span class="flag-icon flag-icon-ru"></span>United States</p>
+                  </label>
+                  <label class="checkbox"><input type="checkbox"><i></i>
+                    <p><span class="flag-icon flag-icon-de"></span>United States</p>
+                  </label>
+                  <label class="checkbox"><input type="checkbox"><i></i>
+                    <p><span class="flag-icon flag-icon-es"></span>United States</p>
+                  </label><label class="checkbox"><input type="checkbox"><i></i>
+                    <p><span class="flag-icon flag-icon-us"></span>Lorem ipsum dolor sit amet.</p>
+                  </label>
+                  <label class="checkbox"><input type="checkbox"><i></i>
+                    <p><span class="flag-icon flag-icon-ru"></span>United States</p>
+                  </label>
+                  <label class="checkbox"><input type="checkbox"><i></i>
+                    <p><span class="flag-icon flag-icon-de"></span>United States</p>
+                  </label>
+                  <label class="checkbox"><input type="checkbox"><i></i>
+                    <p><span class="flag-icon flag-icon-es"></span>United States</p>
+                  </label><label class="checkbox"><input type="checkbox"><i></i>
+                    <p><span class="flag-icon flag-icon-us"></span>United States</p>
+                  </label>
+                  <label class="checkbox"><input type="checkbox"><i></i>
+                    <p><span class="flag-icon flag-icon-ru"></span>United States</p>
+                  </label>
+                  <label class="checkbox"><input type="checkbox"><i></i>
+                    <p><span class="flag-icon flag-icon-de"></span>United States</p>
+                  </label>
+                  <label class="checkbox"><input type="checkbox"><i></i>
+                    <p><span class="flag-icon flag-icon-es"></span>United States</p>
+                  </label><label class="checkbox"><input type="checkbox"><i></i>
+                    <p><span class="flag-icon flag-icon-us"></span>United States</p>
+                  </label>
+                  <label class="checkbox"><input type="checkbox"><i></i>
+                    <p><span class="flag-icon flag-icon-ru"></span>United States</p>
+                  </label>
+                  <label class="checkbox"><input type="checkbox"><i></i>
+                    <p><span class="flag-icon flag-icon-de"></span>United States</p>
+                  </label>
+                  <label class="checkbox"><input type="checkbox"><i></i>
+                    <p><span class="flag-icon flag-icon-es"></span>United States</p>
+                  </label><label class="checkbox"><input type="checkbox"><i></i>
+                    <p><span class="flag-icon flag-icon-us"></span>United States</p>
+                  </label>
+                  <label class="checkbox"><input type="checkbox"><i></i>
+                    <p><span class="flag-icon flag-icon-ru"></span>United States</p>
+                  </label>
+                  <label class="checkbox"><input type="checkbox"><i></i>
+                    <p><span class="flag-icon flag-icon-de"></span>United States</p>
+                  </label>
+                  <label class="checkbox"><input type="checkbox"><i></i>
+                    <p><span class="flag-icon flag-icon-es"></span>United States</p>
+                  </label><label class="checkbox"><input type="checkbox"><i></i>
+                    <p><span class="flag-icon flag-icon-us"></span>United States</p>
+                  </label>
+                  <label class="checkbox"><input type="checkbox"><i></i>
+                    <p><span class="flag-icon flag-icon-ru"></span>United States</p>
+                  </label>
+                  <label class="checkbox"><input type="checkbox"><i></i>
+                    <p><span class="flag-icon flag-icon-de"></span>United States</p>
+                  </label>
+                  <label class="checkbox"><input type="checkbox"><i></i>
+                    <p><span class="flag-icon flag-icon-es"></span>United States</p>
+                  </label><label class="checkbox"><input type="checkbox"><i></i>
+                    <p><span class="flag-icon flag-icon-us"></span>United States</p>
+                  </label>
+                  <label class="checkbox"><input type="checkbox"><i></i>
+                    <p><span class="flag-icon flag-icon-ru"></span>United States</p>
+                  </label>
+                  <label class="checkbox"><input type="checkbox"><i></i>
+                    <p><span class="flag-icon flag-icon-de"></span>United States</p>
+                  </label>
+                  <label class="checkbox"><input type="checkbox"><i></i>
+                    <p><span class="flag-icon flag-icon-es"></span>United States</p>
+                  </label><label class="checkbox"><input type="checkbox"><i></i>
+                    <p><span class="flag-icon flag-icon-us"></span>United States</p>
+                  </label>
+                  <label class="checkbox"><input type="checkbox"><i></i>
+                    <p><span class="flag-icon flag-icon-ru"></span>United States</p>
+                  </label>
+                  <label class="checkbox"><input type="checkbox"><i></i>
+                    <p><span class="flag-icon flag-icon-de"></span>United States</p>
+                  </label>
+                  <label class="checkbox"><input type="checkbox"><i></i>
+                    <p><span class="flag-icon flag-icon-es"></span>United States</p>
+                  </label><label class="checkbox"><input type="checkbox"><i></i>
+                    <p><span class="flag-icon flag-icon-us"></span>United States</p>
+                  </label>
+                  <label class="checkbox"><input type="checkbox"><i></i>
+                    <p><span class="flag-icon flag-icon-ru"></span>United States</p>
+                  </label>
+                  <label class="checkbox"><input type="checkbox"><i></i>
+                    <p><span class="flag-icon flag-icon-de"></span>United States</p>
+                  </label>
+                  <label class="checkbox"><input type="checkbox"><i></i>
+                    <p><span class="flag-icon flag-icon-es"></span>United States</p>
+                  </label><label class="checkbox"><input type="checkbox"><i></i>
+                    <p><span class="flag-icon flag-icon-us"></span>United States</p>
+                  </label>
+                  <label class="checkbox"><input type="checkbox"><i></i>
+                    <p><span class="flag-icon flag-icon-ru"></span>United States</p>
+                  </label>
+                  <label class="checkbox"><input type="checkbox"><i></i>
+                    <p><span class="flag-icon flag-icon-de"></span>United States</p>
+                  </label>
+                  <label class="checkbox"><input type="checkbox"><i></i>
+                    <p><span class="flag-icon flag-icon-es"></span>United States</p>
+                  </label><label class="checkbox"><input type="checkbox"><i></i>
+                    <p><span class="flag-icon flag-icon-us"></span>United States</p>
+                  </label>
+                  <label class="checkbox"><input type="checkbox"><i></i>
+                    <p><span class="flag-icon flag-icon-ru"></span>United States</p>
+                  </label>
+                  <label class="checkbox"><input type="checkbox"><i></i>
+                    <p><span class="flag-icon flag-icon-de"></span>United States</p>
+                  </label>
+                  <label class="checkbox"><input type="checkbox"><i></i>
+                    <p><span class="flag-icon flag-icon-es"></span>United States</p>
+                  </label><label class="checkbox"><input type="checkbox"><i></i>
+                    <p><span class="flag-icon flag-icon-us"></span>United States</p>
+                  </label>
+                  <label class="checkbox"><input type="checkbox"><i></i>
+                    <p><span class="flag-icon flag-icon-ru"></span>United States</p>
+                  </label>
+                  <label class="checkbox"><input type="checkbox"><i></i>
+                    <p><span class="flag-icon flag-icon-de"></span>United States</p>
+                  </label>
+                  <label class="checkbox"><input type="checkbox"><i></i>
+                    <p><span class="flag-icon flag-icon-es"></span>United States</p>
+                  </label><label class="checkbox"><input type="checkbox"><i></i>
+                    <p><span class="flag-icon flag-icon-us"></span>United States</p>
+                  </label>
+                  <label class="checkbox"><input type="checkbox"><i></i>
+                    <p><span class="flag-icon flag-icon-ru"></span>United States</p>
+                  </label>
+                  <label class="checkbox"><input type="checkbox"><i></i>
+                    <p><span class="flag-icon flag-icon-de"></span>United States</p>
+                  </label>
+                  <label class="checkbox"><input type="checkbox"><i></i>
+                    <p><span class="flag-icon flag-icon-es"></span>United States</p>
+                  </label><label class="checkbox"><input type="checkbox"><i></i>
+                    <p><span class="flag-icon flag-icon-us"></span>United States</p>
+                  </label>
+                  <label class="checkbox"><input type="checkbox"><i></i>
+                    <p><span class="flag-icon flag-icon-ru"></span>United States</p>
+                  </label>
+                  <label class="checkbox"><input type="checkbox"><i></i>
+                    <p><span class="flag-icon flag-icon-de"></span>United States</p>
+                  </label>
+                  <label class="checkbox"><input type="checkbox"><i></i>
+                    <p><span class="flag-icon flag-icon-es"></span>United States</p>
+                  </label><label class="checkbox"><input type="checkbox"><i></i>
+                    <p><span class="flag-icon flag-icon-us"></span>United States</p>
+                  </label>
+                  <label class="checkbox"><input type="checkbox"><i></i>
+                    <p><span class="flag-icon flag-icon-ru"></span>United States</p>
+                  </label>
+                  <label class="checkbox"><input type="checkbox"><i></i>
+                    <p><span class="flag-icon flag-icon-de"></span>United States</p>
+                  </label>
+                  <label class="checkbox"><input type="checkbox"><i></i>
+                    <p><span class="flag-icon flag-icon-es"></span>United States</p>
+                  </label>
+                </div>
+              </div>
+            </div>
+            <div class="radiogroup">
+              <label class="radio"><input type="radio" name="y-orientation" checked><i></i>
+                <p>Brokers</p>
+              </label>
+              <label class="radio"><input type="radio" name="y-orientation"><i></i>
+                <p>Countries</p>
+              </label>
+            </div>
+            <div class="dropdown_filter">
+              <div class="dropdown_filter__label">
+                <div class="dropdown_filter__ico"><svg width="19" height="18" viewBox="0 0 19 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12.0312 9.37013H6.96875C6.6937 9.37013 6.4707 9.58818 6.4707 9.85714C6.4707 10.1261 6.6937 10.3442 6.96875 10.3442H12.0312C12.3063 10.3442 12.5293 10.1261 12.5293 9.85714C12.5293 9.58818 12.3063 9.37013 12.0312 9.37013Z" fill="#666666" />
+                    <path d="M12.0312 12.526H6.96875C6.6937 12.526 6.4707 12.744 6.4707 13.013C6.4707 13.2819 6.6937 13.5 6.96875 13.5H12.0312C12.3063 13.5 12.5293 13.2819 12.5293 13.013C12.5293 12.744 12.3063 12.526 12.0312 12.526Z" fill="#666666" />
+                    <path d="M16.5059 2.2987H15.3105V1.48701C15.3105 1.21805 15.0876 1 14.8125 1C14.5374 1 14.3145 1.21805 14.3145 1.48701V2.2987H9.99805V1.48701C9.99805 1.21805 9.77505 1 9.5 1C9.22495 1 9.00195 1.21805 9.00195 1.48701V2.2987H4.68555V1.48701C4.68555 1.21805 4.46255 1 4.1875 1C3.91245 1 3.68945 1.21805 3.68945 1.48701V2.2987H2.49414C1.67027 2.2987 1 2.95412 1 3.75974V15.539C1 16.3446 1.67027 17 2.49414 17H16.5059C17.3297 17 18 16.3446 18 15.539C18 15.2246 18 4.03328 18 3.75974C18 2.95412 17.3297 2.2987 16.5059 2.2987ZM1.99609 3.75974C1.99609 3.4912 2.21952 3.27273 2.49414 3.27273H3.68945V4.08442C3.68945 4.35338 3.91245 4.57143 4.1875 4.57143C4.46255 4.57143 4.68555 4.35338 4.68555 4.08442V3.27273H9.00195V4.08442C9.00195 4.35338 9.22495 4.57143 9.5 4.57143C9.77505 4.57143 9.99805 4.35338 9.99805 4.08442V3.27273H14.3145V4.08442C14.3145 4.35338 14.5374 4.57143 14.8125 4.57143C15.0876 4.57143 15.3105 4.35338 15.3105 4.08442V3.27273H16.5059C16.7805 3.27273 17.0039 3.4912 17.0039 3.75974V6.02597H1.99609V3.75974ZM16.5059 16.026H2.49414C2.21952 16.026 1.99609 15.8075 1.99609 15.539V7H17.0039V15.539C17.0039 15.8075 16.7805 16.026 16.5059 16.026Z" fill="#666666" />
+                    <path d="M12.0312 9.37013H6.96875C6.6937 9.37013 6.4707 9.58818 6.4707 9.85714C6.4707 10.1261 6.6937 10.3442 6.96875 10.3442H12.0312C12.3063 10.3442 12.5293 10.1261 12.5293 9.85714C12.5293 9.58818 12.3063 9.37013 12.0312 9.37013Z" stroke="#666666" stroke-width="0.3" />
+                    <path d="M12.0312 12.526H6.96875C6.6937 12.526 6.4707 12.744 6.4707 13.013C6.4707 13.2819 6.6937 13.5 6.96875 13.5H12.0312C12.3063 13.5 12.5293 13.2819 12.5293 13.013C12.5293 12.744 12.3063 12.526 12.0312 12.526Z" stroke="#666666" stroke-width="0.3" />
+                    <path d="M16.5059 2.2987H15.3105V1.48701C15.3105 1.21805 15.0876 1 14.8125 1C14.5374 1 14.3145 1.21805 14.3145 1.48701V2.2987H9.99805V1.48701C9.99805 1.21805 9.77505 1 9.5 1C9.22495 1 9.00195 1.21805 9.00195 1.48701V2.2987H4.68555V1.48701C4.68555 1.21805 4.46255 1 4.1875 1C3.91245 1 3.68945 1.21805 3.68945 1.48701V2.2987H2.49414C1.67027 2.2987 1 2.95412 1 3.75974V15.539C1 16.3446 1.67027 17 2.49414 17H16.5059C17.3297 17 18 16.3446 18 15.539C18 15.2246 18 4.03328 18 3.75974C18 2.95412 17.3297 2.2987 16.5059 2.2987ZM1.99609 3.75974C1.99609 3.4912 2.21952 3.27273 2.49414 3.27273H3.68945V4.08442C3.68945 4.35338 3.91245 4.57143 4.1875 4.57143C4.46255 4.57143 4.68555 4.35338 4.68555 4.08442V3.27273H9.00195V4.08442C9.00195 4.35338 9.22495 4.57143 9.5 4.57143C9.77505 4.57143 9.99805 4.35338 9.99805 4.08442V3.27273H14.3145V4.08442C14.3145 4.35338 14.5374 4.57143 14.8125 4.57143C15.0876 4.57143 15.3105 4.35338 15.3105 4.08442V3.27273H16.5059C16.7805 3.27273 17.0039 3.4912 17.0039 3.75974V6.02597H1.99609V3.75974ZM16.5059 16.026H2.49414C2.21952 16.026 1.99609 15.8075 1.99609 15.539V7H17.0039V15.539C17.0039 15.8075 16.7805 16.026 16.5059 16.026Z" stroke="#666666" stroke-width="0.3" />
+                  </svg>
+                </div>
+                <div class="dropdown_filter__val">Date</div>
+              </div>
+              <div class="dropdown_filter__list">
+                <div class="monthpicker">
+                  <div class="monthpicker__nav">
+                    <ul>
+                      <li data-period="-1">Last month</li>
+                      <li data-period="-3">Last 3 months</li>
+                      <li data-period="-6">Last 6 months</li>
+                      <li data-period="-12">This Year</li>
+                    </ul>
+                  </div>
+                  <div class="monthpicker__content">
+                    <div class="monthpicker__table">
+                      <div class="monthpicker__table__itm">
+                        <div class="monthpicker__table__title">2019</div>
+                        <div class="monthpicker__table__cell"><span>Jan</span></div>
+                        <div class="monthpicker__table__cell"><span>Feb</span></div>
+                        <div class="monthpicker__table__cell"><span>Mar</span></div>
+                        <div class="monthpicker__table__cell"><span>Apr</span></div>
+                        <div class="monthpicker__table__cell"><span>May</span></div>
+                        <div class="monthpicker__table__cell"><span>Jun</span></div>
+                        <div class="monthpicker__table__cell"><span>Jul</span></div>
+                        <div class="monthpicker__table__cell"><span>Aug</span></div>
+                        <div class="monthpicker__table__cell"><span>Sep</span></div>
+                        <div class="monthpicker__table__cell"><span>Oct</span></div>
+                        <div class="monthpicker__table__cell"><span>Nov</span></div>
+                        <div class="monthpicker__table__cell"><span>Dec</span></div>
+                      </div>
+                      <div class="monthpicker__table__itm">
+                        <div class="monthpicker__table__title">2020</div>
+                        <div class="monthpicker__table__cell"><span>Jan</span></div>
+                        <div class="monthpicker__table__cell"><span>Feb</span></div>
+                        <div class="monthpicker__table__cell"><span>Mar</span></div>
+                        <div class="monthpicker__table__cell"><span>Apr</span></div>
+                        <div class="monthpicker__table__cell"><span>May</span></div>
+                        <div class="monthpicker__table__cell"><span>Jun</span></div>
+                        <div class="monthpicker__table__cell"><span>Jul</span></div>
+                        <div class="monthpicker__table__cell"><span>Aug</span></div>
+                        <div class="monthpicker__table__cell"><span>Sep</span></div>
+                        <div class="monthpicker__table__cell"><span>Oct</span></div>
+                        <div class="monthpicker__table__cell"><span>Nov</span></div>
+                        <div class="monthpicker__table__cell"><span>Dec</span></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="dashboard__main">
+          <div class="geo_table_wrap">
+            <div class="v-header"></div>
+            <div class="geo_table_scroll_wrap">
+              <div class="geo_table">
+                <div class="thead" id="stiky-sidebar">
+                  <div class="tr">
+                    <div class="td"></div>
+                    <div class="td"><span class="flag-icon flag-icon-us"></span>United States <div class="column_sort"><button class="column_sort__btn desc active"></button><button class="column_sort__btn asc"></button></div>
+                    </div>
+                    <div class="td"><span class="flag-icon flag-icon-ru"></span>Russion Federation<div class="column_sort"><button class="column_sort__btn desc active"></button><button class="column_sort__btn asc"></button></div>
+                    </div>
+                    <div class="td"><span class="flag-icon flag-icon-us"></span>United States <div class="column_sort"><button class="column_sort__btn desc active"></button><button class="column_sort__btn asc"></button></div>
+                    </div>
+                    <div class="td"><span class="flag-icon flag-icon-us"></span>United States <div class="column_sort"><button class="column_sort__btn desc active"></button><button class="column_sort__btn asc"></button></div>
+                    </div>
+                    <div class="td"><span class="flag-icon flag-icon-us"></span>United States <div class="column_sort"><button class="column_sort__btn desc active"></button><button class="column_sort__btn asc"></button></div>
+                    </div>
+                    <div class="td"><span class="flag-icon flag-icon-us"></span>United States <div class="column_sort"><button class="column_sort__btn desc active"></button><button class="column_sort__btn asc"></button></div>
+                    </div>
+                    <div class="td"><span class="flag-icon flag-icon-us"></span>United States <div class="column_sort"><button class="column_sort__btn desc active"></button><button class="column_sort__btn asc"></button></div>
+                    </div>
+                    <div class="td"><span class="flag-icon flag-icon-ru"></span>Russion <div class="column_sort"><button class="column_sort__btn desc active"></button><button class="column_sort__btn asc"></button></div>
+                    </div>
+                    <div class="td"><span class="flag-icon flag-icon-us"></span>United States <div class="column_sort"><button class="column_sort__btn desc active"></button><button class="column_sort__btn asc"></button></div>
+                    </div>
+                    <div class="td"><span class="flag-icon flag-icon-us"></span>United States <div class="column_sort"><button class="column_sort__btn desc active"></button><button class="column_sort__btn asc"></button></div>
+                    </div>
+                    <div class="td"><span class="flag-icon flag-icon-us"></span>United States <div class="column_sort"><button class="column_sort__btn desc active"></button><button class="column_sort__btn asc"></button></div>
+                    </div>
+                    <div class="td"><span class="flag-icon flag-icon-us"></span>United States <div class="column_sort"><button class="column_sort__btn desc active"></button><button class="column_sort__btn asc"></button></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="tbody">
+                  <div class="tr">
+                    <div class="td"><img src="img/brokers/image21.png" alt=""></div>
+                    <div class="td">
+                      <p><b>99 999</b> <span class="rating-down">17%</span></p>
+                      <p><b>15%</b> of total</p>
+                    </div>
+                    <div class="td">
+                      <p><b>99 999</b> <span class="rating-up">12%</span></p>
+                      <p>share <b>18%</b></p>
+                    </div>
+                    <div class="td">
+                      <p><b>99 999</b> <span class="rating-down">17%</span></p>
+                      <p><b>15%</b> of total</p>
+                    </div>
+                    <div class="td">
+                      <p><b>99 999</b> <span class="rating-up">12%</span></p>
+                      <p>share <b>18%</b></p>
+                    </div>
+                    <div class="td">
+                      <p><b>99 999</b> <span class="rating-down">17%</span></p>
+                      <p><b>15%</b> of total</p>
+                    </div>
+                    <div class="td">
+                      <p><b>99 999</b> <span class="rating-up">12%</span></p>
+                      <p>share <b>18%</b></p>
+                    </div>
+                    <div class="td">
+                      <p><b>99 999</b> <span class="rating-down">17%</span></p>
+                      <p><b>15%</b> of total</p>
+                    </div>
+                    <div class="td">
+                      <p><b>99 999</b> <span class="rating-up">12%</span></p>
+                      <p>share <b>18%</b></p>
+                    </div>
+                    <div class="td">
+                      <p><b>99 999</b> <span class="rating-down">17%</span></p>
+                      <p><b>15%</b> of total</p>
+                    </div>
+                    <div class="td">
+                      <p><b>99 999</b> <span class="rating-up">12%</span></p>
+                      <p>share <b>18%</b></p>
+                    </div>
+                    <div class="td">
+                      <p><b>99 999</b> <span class="rating-down">17%</span></p>
+                      <p><b>15%</b> of total</p>
+                    </div>
+                    <div class="td">
+                      <p><b>99 999</b> <span class="rating-up">12%</span></p>
+                      <p>share <b>18%</b></p>
+                    </div>
+                  </div>
+                  <div class="tr">
+                    <div class="td"><img src="img/brokers/image22.png" alt=""></div>
+                    <div class="td">
+                      <p><b>99 999</b> <span class="rating-down">17%</span></p>
+                      <p><b>15%</b> of total</p>
+                    </div>
+                    <div class="td">
+                      <p><b>99 999</b> <span class="rating-up">12%</span></p>
+                      <p>share <b>18%</b></p>
+                    </div>
+                    <div class="td">
+                      <p><b>99 999</b> <span class="rating-down">17%</span></p>
+                      <p><b>15%</b> of total</p>
+                    </div>
+                    <div class="td">
+                      <p><b>99 999</b> <span class="rating-up">12%</span></p>
+                      <p>share <b>18%</b></p>
+                    </div>
+                    <div class="td">
+                      <p><b>99 999</b> <span class="rating-down">17%</span></p>
+                      <p><b>15%</b> of total</p>
+                    </div>
+                    <div class="td">
+                      <p><b>99 999</b> <span class="rating-up">12%</span></p>
+                      <p>share <b>18%</b></p>
+                    </div>
+                    <div class="td">
+                      <p><b>99 999</b> <span class="rating-down">17%</span></p>
+                      <p><b>15%</b> of total</p>
+                    </div>
+                    <div class="td">
+                      <p><b>99 999</b> <span class="rating-up">12%</span></p>
+                      <p>share <b>18%</b></p>
+                    </div>
+                    <div class="td">
+                      <p><b>99 999</b> <span class="rating-down">17%</span></p>
+                      <p><b>15%</b> of total</p>
+                    </div>
+                    <div class="td">
+                      <p><b>99 999</b> <span class="rating-up">12%</span></p>
+                      <p>share <b>18%</b></p>
+                    </div>
+                    <div class="td">
+                      <p><b>99 999</b> <span class="rating-down">17%</span></p>
+                      <p><b>15%</b> of total</p>
+                    </div>
+                    <div class="td">
+                      <p><b>99 999</b> <span class="rating-up">12%</span></p>
+                      <p>share <b>18%</b></p>
+                    </div>
+                  </div>
+                  <div class="tr">
+                    <div class="td"><img src="img/brokers/image23.png" alt=""></div>
+                    <div class="td">
+                      <p><b>99 999</b> <span class="rating-down">17%</span></p>
+                      <p><b>15%</b> of total</p>
+                    </div>
+                    <div class="td">
+                      <p><b>99 999</b> <span class="rating-up">12%</span></p>
+                      <p>share <b>18%</b></p>
+                    </div>
+                    <div class="td">
+                      <p><b>99 999</b> <span class="rating-down">17%</span></p>
+                      <p><b>15%</b> of total</p>
+                    </div>
+                    <div class="td">
+                      <p><b>99 999</b> <span class="rating-up">12%</span></p>
+                      <p>share <b>18%</b></p>
+                    </div>
+                    <div class="td">
+                      <p><b>99 999</b> <span class="rating-down">17%</span></p>
+                      <p><b>15%</b> of total</p>
+                    </div>
+                    <div class="td">
+                      <p><b>99 999</b> <span class="rating-up">12%</span></p>
+                      <p>share <b>18%</b></p>
+                    </div>
+                    <div class="td">
+                      <p><b>99 999</b> <span class="rating-down">17%</span></p>
+                      <p><b>15%</b> of total</p>
+                    </div>
+                    <div class="td">
+                      <p><b>99 999</b> <span class="rating-up">12%</span></p>
+                      <p>share <b>18%</b></p>
+                    </div>
+                    <div class="td">
+                      <p><b>99 999</b> <span class="rating-down">17%</span></p>
+                      <p><b>15%</b> of total</p>
+                    </div>
+                    <div class="td">
+                      <p><b>99 999</b> <span class="rating-up">12%</span></p>
+                      <p>share <b>18%</b></p>
+                    </div>
+                    <div class="td">
+                      <p><b>99 999</b> <span class="rating-down">17%</span></p>
+                      <p><b>15%</b> of total</p>
+                    </div>
+                    <div class="td">
+                      <p><b>99 999</b> <span class="rating-up">12%</span></p>
+                      <p>share <b>18%</b></p>
+                    </div>
+                  </div>
+                  <div class="tr">
+                    <div class="td"><img src="img/brokers/image24.png" alt=""></div>
+                    <div class="td">
+                      <p><b>99 999</b> <span class="rating-down">17%</span></p>
+                      <p><b>15%</b> of total</p>
+                    </div>
+                    <div class="td">
+                      <p><b>99 999</b> <span class="rating-up">12%</span></p>
+                      <p>share <b>18%</b></p>
+                    </div>
+                    <div class="td">
+                      <p><b>99 999</b> <span class="rating-down">17%</span></p>
+                      <p><b>15%</b> of total</p>
+                    </div>
+                    <div class="td">
+                      <p><b>99 999</b> <span class="rating-up">12%</span></p>
+                      <p>share <b>18%</b></p>
+                    </div>
+                    <div class="td">
+                      <p><b>99 999</b> <span class="rating-down">17%</span></p>
+                      <p><b>15%</b> of total</p>
+                    </div>
+                    <div class="td">
+                      <p><b>99 999</b> <span class="rating-up">12%</span></p>
+                      <p>share <b>18%</b></p>
+                    </div>
+                    <div class="td">
+                      <p><b>99 999</b> <span class="rating-down">17%</span></p>
+                      <p><b>15%</b> of total</p>
+                    </div>
+                    <div class="td">
+                      <p><b>99 999</b> <span class="rating-up">12%</span></p>
+                      <p>share <b>18%</b></p>
+                    </div>
+                    <div class="td">
+                      <p><b>99 999</b> <span class="rating-down">17%</span></p>
+                      <p><b>15%</b> of total</p>
+                    </div>
+                    <div class="td">
+                      <p><b>99 999</b> <span class="rating-up">12%</span></p>
+                      <p>share <b>18%</b></p>
+                    </div>
+                    <div class="td">
+                      <p><b>99 999</b> <span class="rating-down">17%</span></p>
+                      <p><b>15%</b> of total</p>
+                    </div>
+                    <div class="td">
+                      <p><b>99 999</b> <span class="rating-up">12%</span></p>
+                      <p>share <b>18%</b></p>
+                    </div>
+                  </div>
+                  <div class="tr">
+                    <div class="td"><img src="img/brokers/image25.png" alt=""></div>
+                    <div class="td">
+                      <p><b>99 999</b> <span class="rating-down">17%</span></p>
+                      <p><b>15%</b> of total</p>
+                    </div>
+                    <div class="td">
+                      <p><b>99 999</b> <span class="rating-up">12%</span></p>
+                      <p>share <b>18%</b></p>
+                    </div>
+                    <div class="td">
+                      <p><b>99 999</b> <span class="rating-down">17%</span></p>
+                      <p><b>15%</b> of total</p>
+                    </div>
+                    <div class="td">
+                      <p><b>99 999</b> <span class="rating-up">12%</span></p>
+                      <p>share <b>18%</b></p>
+                    </div>
+                    <div class="td">
+                      <p><b>99 999</b> <span class="rating-down">17%</span></p>
+                      <p><b>15%</b> of total</p>
+                    </div>
+                    <div class="td">
+                      <p><b>99 999</b> <span class="rating-up">12%</span></p>
+                      <p>share <b>18%</b></p>
+                    </div>
+                    <div class="td">
+                      <p><b>99 999</b> <span class="rating-down">17%</span></p>
+                      <p><b>15%</b> of total</p>
+                    </div>
+                    <div class="td">
+                      <p><b>99 999</b> <span class="rating-up">12%</span></p>
+                      <p>share <b>18%</b></p>
+                    </div>
+                    <div class="td">
+                      <p><b>99 999</b> <span class="rating-down">17%</span></p>
+                      <p><b>15%</b> of total</p>
+                    </div>
+                    <div class="td">
+                      <p><b>99 999</b> <span class="rating-up">12%</span></p>
+                      <p>share <b>18%</b></p>
+                    </div>
+                    <div class="td">
+                      <p><b>99 999</b> <span class="rating-down">17%</span></p>
+                      <p><b>15%</b> of total</p>
+                    </div>
+                    <div class="td">
+                      <p><b>99 999</b> <span class="rating-up">12%</span></p>
+                      <p>share <b>18%</b></p>
+                    </div>
+                  </div>
+                  <div class="tr">
+                    <div class="td"><img src="img/brokers/image26.png" alt=""></div>
+                    <div class="td">
+                      <p><b>99 999</b> <span class="rating-down">17%</span></p>
+                      <p><b>15%</b> of total</p>
+                    </div>
+                    <div class="td">
+                      <p><b>99 999</b> <span class="rating-up">12%</span></p>
+                      <p>share <b>18%</b></p>
+                    </div>
+                    <div class="td">
+                      <p><b>99 999</b> <span class="rating-down">17%</span></p>
+                      <p><b>15%</b> of total</p>
+                    </div>
+                    <div class="td">
+                      <p><b>99 999</b> <span class="rating-up">12%</span></p>
+                      <p>share <b>18%</b></p>
+                    </div>
+                    <div class="td">
+                      <p><b>99 999</b> <span class="rating-down">17%</span></p>
+                      <p><b>15%</b> of total</p>
+                    </div>
+                    <div class="td">
+                      <p><b>99 999</b> <span class="rating-up">12%</span></p>
+                      <p>share <b>18%</b></p>
+                    </div>
+                    <div class="td">
+                      <p><b>99 999</b> <span class="rating-down">17%</span></p>
+                      <p><b>15%</b> of total</p>
+                    </div>
+                    <div class="td">
+                      <p><b>99 999</b> <span class="rating-up">12%</span></p>
+                      <p>share <b>18%</b></p>
+                    </div>
+                    <div class="td">
+                      <p><b>99 999</b> <span class="rating-down">17%</span></p>
+                      <p><b>15%</b> of total</p>
+                    </div>
+                    <div class="td">
+                      <p><b>99 999</b> <span class="rating-up">12%</span></p>
+                      <p>share <b>18%</b></p>
+                    </div>
+                    <div class="td">
+                      <p><b>99 999</b> <span class="rating-down">17%</span></p>
+                      <p><b>15%</b> of total</p>
+                    </div>
+                    <div class="td">
+                      <p><b>99 999</b> <span class="rating-up">12%</span></p>
+                      <p>share <b>18%</b></p>
+                    </div>
+                  </div>
+                  <div class="tr">
+                    <div class="td"><img src="img/brokers/image27.png" alt=""></div>
+                    <div class="td">
+                      <p><b>99 999</b> <span class="rating-down">17%</span></p>
+                      <p><b>15%</b> of total</p>
+                    </div>
+                    <div class="td">
+                      <p><b>99 999</b> <span class="rating-up">12%</span></p>
+                      <p>share <b>18%</b></p>
+                    </div>
+                    <div class="td">
+                      <p><b>99 999</b> <span class="rating-down">17%</span></p>
+                      <p><b>15%</b> of total</p>
+                    </div>
+                    <div class="td">
+                      <p><b>99 999</b> <span class="rating-up">12%</span></p>
+                      <p>share <b>18%</b></p>
+                    </div>
+                    <div class="td">
+                      <p><b>99 999</b> <span class="rating-down">17%</span></p>
+                      <p><b>15%</b> of total</p>
+                    </div>
+                    <div class="td">
+                      <p><b>99 999</b> <span class="rating-up">12%</span></p>
+                      <p>share <b>18%</b></p>
+                    </div>
+                    <div class="td">
+                      <p><b>99 999</b> <span class="rating-down">17%</span></p>
+                      <p><b>15%</b> of total</p>
+                    </div>
+                    <div class="td">
+                      <p><b>99 999</b> <span class="rating-up">12%</span></p>
+                      <p>share <b>18%</b></p>
+                    </div>
+                    <div class="td">
+                      <p><b>99 999</b> <span class="rating-down">17%</span></p>
+                      <p><b>15%</b> of total</p>
+                    </div>
+                    <div class="td">
+                      <p><b>99 999</b> <span class="rating-up">12%</span></p>
+                      <p>share <b>18%</b></p>
+                    </div>
+                    <div class="td">
+                      <p><b>99 999</b> <span class="rating-down">17%</span></p>
+                      <p><b>15%</b> of total</p>
+                    </div>
+                    <div class="td">
+                      <p><b>99 999</b> <span class="rating-up">12%</span></p>
+                      <p>share <b>18%</b></p>
+                    </div>
+                  </div>
+                  <div class="tr">
+                    <div class="td"><img src="img/brokers/image28.png" alt=""></div>
+                    <div class="td">
+                      <p><b>99 999</b> <span class="rating-down">17%</span></p>
+                      <p><b>15%</b> of total</p>
+                    </div>
+                    <div class="td">
+                      <p><b>99 999</b> <span class="rating-up">12%</span></p>
+                      <p>share <b>18%</b></p>
+                    </div>
+                    <div class="td">
+                      <p><b>99 999</b> <span class="rating-down">17%</span></p>
+                      <p><b>15%</b> of total</p>
+                    </div>
+                    <div class="td">
+                      <p><b>99 999</b> <span class="rating-up">12%</span></p>
+                      <p>share <b>18%</b></p>
+                    </div>
+                    <div class="td">
+                      <p><b>99 999</b> <span class="rating-down">17%</span></p>
+                      <p><b>15%</b> of total</p>
+                    </div>
+                    <div class="td">
+                      <p><b>99 999</b> <span class="rating-up">12%</span></p>
+                      <p>share <b>18%</b></p>
+                    </div>
+                    <div class="td">
+                      <p><b>99 999</b> <span class="rating-down">17%</span></p>
+                      <p><b>15%</b> of total</p>
+                    </div>
+                    <div class="td">
+                      <p><b>99 999</b> <span class="rating-up">12%</span></p>
+                      <p>share <b>18%</b></p>
+                    </div>
+                    <div class="td">
+                      <p><b>99 999</b> <span class="rating-down">17%</span></p>
+                      <p><b>15%</b> of total</p>
+                    </div>
+                    <div class="td">
+                      <p><b>99 999</b> <span class="rating-up">12%</span></p>
+                      <p>share <b>18%</b></p>
+                    </div>
+                    <div class="td">
+                      <p><b>99 999</b> <span class="rating-down">17%</span></p>
+                      <p><b>15%</b> of total</p>
+                    </div>
+                    <div class="td">
+                      <p><b>99 999</b> <span class="rating-up">12%</span></p>
+                      <p>share <b>18%</b></p>
+                    </div>
+                  </div>
+                  <div class="tr">
+                    <div class="td"><img src="img/brokers/image29.png" alt=""></div>
+                    <div class="td">
+                      <p><b>99 999</b> <span class="rating-down">17%</span></p>
+                      <p><b>15%</b> of total</p>
+                    </div>
+                    <div class="td">
+                      <p><b>99 999</b> <span class="rating-up">12%</span></p>
+                      <p>share <b>18%</b></p>
+                    </div>
+                    <div class="td">
+                      <p><b>99 999</b> <span class="rating-down">17%</span></p>
+                      <p><b>15%</b> of total</p>
+                    </div>
+                    <div class="td">
+                      <p><b>99 999</b> <span class="rating-up">12%</span></p>
+                      <p>share <b>18%</b></p>
+                    </div>
+                    <div class="td">
+                      <p><b>99 999</b> <span class="rating-down">17%</span></p>
+                      <p><b>15%</b> of total</p>
+                    </div>
+                    <div class="td">
+                      <p><b>99 999</b> <span class="rating-up">12%</span></p>
+                      <p>share <b>18%</b></p>
+                    </div>
+                    <div class="td">
+                      <p><b>99 999</b> <span class="rating-down">17%</span></p>
+                      <p><b>15%</b> of total</p>
+                    </div>
+                    <div class="td">
+                      <p><b>99 999</b> <span class="rating-up">12%</span></p>
+                      <p>share <b>18%</b></p>
+                    </div>
+                    <div class="td">
+                      <p><b>99 999</b> <span class="rating-down">17%</span></p>
+                      <p><b>15%</b> of total</p>
+                    </div>
+                    <div class="td">
+                      <p><b>99 999</b> <span class="rating-up">12%</span></p>
+                      <p>share <b>18%</b></p>
+                    </div>
+                    <div class="td">
+                      <p><b>99 999</b> <span class="rating-down">17%</span></p>
+                      <p><b>15%</b> of total</p>
+                    </div>
+                    <div class="td">
+                      <p><b>99 999</b> <span class="rating-up">12%</span></p>
+                      <p>share <b>18%</b></p>
+                    </div>
+                  </div>
+                  <div class="tr">
+                    <div class="td"><img src="img/brokers/image21.png" alt=""></div>
+                    <div class="td">
+                      <p><b>99 999</b> <span class="rating-down">17%</span></p>
+                      <p><b>15%</b> of total</p>
+                    </div>
+                    <div class="td">
+                      <p><b>99 999</b> <span class="rating-up">12%</span></p>
+                      <p>share <b>18%</b></p>
+                    </div>
+                    <div class="td">
+                      <p><b>99 999</b> <span class="rating-down">17%</span></p>
+                      <p><b>15%</b> of total</p>
+                    </div>
+                    <div class="td">
+                      <p><b>99 999</b> <span class="rating-up">12%</span></p>
+                      <p>share <b>18%</b></p>
+                    </div>
+                    <div class="td">
+                      <p><b>99 999</b> <span class="rating-down">17%</span></p>
+                      <p><b>15%</b> of total</p>
+                    </div>
+                    <div class="td">
+                      <p><b>99 999</b> <span class="rating-up">12%</span></p>
+                      <p>share <b>18%</b></p>
+                    </div>
+                    <div class="td">
+                      <p><b>99 999</b> <span class="rating-down">17%</span></p>
+                      <p><b>15%</b> of total</p>
+                    </div>
+                    <div class="td">
+                      <p><b>99 999</b> <span class="rating-up">12%</span></p>
+                      <p>share <b>18%</b></p>
+                    </div>
+                    <div class="td">
+                      <p><b>99 999</b> <span class="rating-down">17%</span></p>
+                      <p><b>15%</b> of total</p>
+                    </div>
+                    <div class="td">
+                      <p><b>99 999</b> <span class="rating-up">12%</span></p>
+                      <p>share <b>18%</b></p>
+                    </div>
+                    <div class="td">
+                      <p><b>99 999</b> <span class="rating-down">17%</span></p>
+                      <p><b>15%</b> of total</p>
+                    </div>
+                    <div class="td">
+                      <p><b>99 999</b> <span class="rating-up">12%</span></p>
+                      <p>share <b>18%</b></p>
+                    </div>
+                  </div>
+                  <div class="tr">
+                    <div class="td"><img src="img/brokers/image22.png" alt=""></div>
+                    <div class="td">
+                      <p><b>99 999</b> <span class="rating-down">17%</span></p>
+                      <p><b>15%</b> of total</p>
+                    </div>
+                    <div class="td">
+                      <p><b>99 999</b> <span class="rating-up">12%</span></p>
+                      <p>share <b>18%</b></p>
+                    </div>
+                    <div class="td">
+                      <p><b>99 999</b> <span class="rating-down">17%</span></p>
+                      <p><b>15%</b> of total</p>
+                    </div>
+                    <div class="td">
+                      <p><b>99 999</b> <span class="rating-up">12%</span></p>
+                      <p>share <b>18%</b></p>
+                    </div>
+                    <div class="td">
+                      <p><b>99 999</b> <span class="rating-down">17%</span></p>
+                      <p><b>15%</b> of total</p>
+                    </div>
+                    <div class="td">
+                      <p><b>99 999</b> <span class="rating-up">12%</span></p>
+                      <p>share <b>18%</b></p>
+                    </div>
+                    <div class="td">
+                      <p><b>99 999</b> <span class="rating-down">17%</span></p>
+                      <p><b>15%</b> of total</p>
+                    </div>
+                    <div class="td">
+                      <p><b>99 999</b> <span class="rating-up">12%</span></p>
+                      <p>share <b>18%</b></p>
+                    </div>
+                    <div class="td">
+                      <p><b>99 999</b> <span class="rating-down">17%</span></p>
+                      <p><b>15%</b> of total</p>
+                    </div>
+                    <div class="td">
+                      <p><b>99 999</b> <span class="rating-up">12%</span></p>
+                      <p>share <b>18%</b></p>
+                    </div>
+                    <div class="td">
+                      <p><b>99 999</b> <span class="rating-down">17%</span></p>
+                      <p><b>15%</b> of total</p>
+                    </div>
+                    <div class="td">
+                      <p><b>99 999</b> <span class="rating-up">12%</span></p>
+                      <p>share <b>18%</b></p>
+                    </div>
+                  </div>
+                  <div class="tr">
+                    <div class="td"><img src="img/brokers/image23.png" alt=""></div>
+                    <div class="td">
+                      <p><b>99 999</b> <span class="rating-down">17%</span></p>
+                      <p><b>15%</b> of total</p>
+                    </div>
+                    <div class="td">
+                      <p><b>99 999</b> <span class="rating-up">12%</span></p>
+                      <p>share <b>18%</b></p>
+                    </div>
+                    <div class="td">
+                      <p><b>99 999</b> <span class="rating-down">17%</span></p>
+                      <p><b>15%</b> of total</p>
+                    </div>
+                    <div class="td">
+                      <p><b>99 999</b> <span class="rating-up">12%</span></p>
+                      <p>share <b>18%</b></p>
+                    </div>
+                    <div class="td">
+                      <p><b>99 999</b> <span class="rating-down">17%</span></p>
+                      <p><b>15%</b> of total</p>
+                    </div>
+                    <div class="td">
+                      <p><b>99 999</b> <span class="rating-up">12%</span></p>
+                      <p>share <b>18%</b></p>
+                    </div>
+                    <div class="td">
+                      <p><b>99 999</b> <span class="rating-down">17%</span></p>
+                      <p><b>15%</b> of total</p>
+                    </div>
+                    <div class="td">
+                      <p><b>99 999</b> <span class="rating-up">12%</span></p>
+                      <p>share <b>18%</b></p>
+                    </div>
+                    <div class="td">
+                      <p><b>99 999</b> <span class="rating-down">17%</span></p>
+                      <p><b>15%</b> of total</p>
+                    </div>
+                    <div class="td">
+                      <p><b>99 999</b> <span class="rating-up">12%</span></p>
+                      <p>share <b>18%</b></p>
+                    </div>
+                    <div class="td">
+                      <p><b>99 999</b> <span class="rating-down">17%</span></p>
+                      <p><b>15%</b> of total</p>
+                    </div>
+                    <div class="td">
+                      <p><b>99 999</b> <span class="rating-up">12%</span></p>
+                      <p>share <b>18%</b></p>
+                    </div>
+                  </div>
+                  <div class="tr">
+                    <div class="td"><img src="img/brokers/image24.png" alt=""></div>
+                    <div class="td">
+                      <p><b>99 999</b> <span class="rating-down">17%</span></p>
+                      <p><b>15%</b> of total</p>
+                    </div>
+                    <div class="td">
+                      <p><b>99 999</b> <span class="rating-up">12%</span></p>
+                      <p>share <b>18%</b></p>
+                    </div>
+                    <div class="td">
+                      <p><b>99 999</b> <span class="rating-down">17%</span></p>
+                      <p><b>15%</b> of total</p>
+                    </div>
+                    <div class="td">
+                      <p><b>99 999</b> <span class="rating-up">12%</span></p>
+                      <p>share <b>18%</b></p>
+                    </div>
+                    <div class="td">
+                      <p><b>99 999</b> <span class="rating-down">17%</span></p>
+                      <p><b>15%</b> of total</p>
+                    </div>
+                    <div class="td">
+                      <p><b>99 999</b> <span class="rating-up">12%</span></p>
+                      <p>share <b>18%</b></p>
+                    </div>
+                    <div class="td">
+                      <p><b>99 999</b> <span class="rating-down">17%</span></p>
+                      <p><b>15%</b> of total</p>
+                    </div>
+                    <div class="td">
+                      <p><b>99 999</b> <span class="rating-up">12%</span></p>
+                      <p>share <b>18%</b></p>
+                    </div>
+                    <div class="td">
+                      <p><b>99 999</b> <span class="rating-down">17%</span></p>
+                      <p><b>15%</b> of total</p>
+                    </div>
+                    <div class="td">
+                      <p><b>99 999</b> <span class="rating-up">12%</span></p>
+                      <p>share <b>18%</b></p>
+                    </div>
+                    <div class="td">
+                      <p><b>99 999</b> <span class="rating-down">17%</span></p>
+                      <p><b>15%</b> of total</p>
+                    </div>
+                    <div class="td">
+                      <p><b>99 999</b> <span class="rating-up">12%</span></p>
+                      <p>share <b>18%</b></p>
+                    </div>
+                  </div>
+                  <div class="tr">
+                    <div class="td"><img src="img/brokers/image25.png" alt=""></div>
+                    <div class="td">
+                      <p><b>99 999</b> <span class="rating-down">17%</span></p>
+                      <p><b>15%</b> of total</p>
+                    </div>
+                    <div class="td">
+                      <p><b>99 999</b> <span class="rating-up">12%</span></p>
+                      <p>share <b>18%</b></p>
+                    </div>
+                    <div class="td">
+                      <p><b>99 999</b> <span class="rating-down">17%</span></p>
+                      <p><b>15%</b> of total</p>
+                    </div>
+                    <div class="td">
+                      <p><b>99 999</b> <span class="rating-up">12%</span></p>
+                      <p>share <b>18%</b></p>
+                    </div>
+                    <div class="td">
+                      <p><b>99 999</b> <span class="rating-down">17%</span></p>
+                      <p><b>15%</b> of total</p>
+                    </div>
+                    <div class="td">
+                      <p><b>99 999</b> <span class="rating-up">12%</span></p>
+                      <p>share <b>18%</b></p>
+                    </div>
+                    <div class="td">
+                      <p><b>99 999</b> <span class="rating-down">17%</span></p>
+                      <p><b>15%</b> of total</p>
+                    </div>
+                    <div class="td">
+                      <p><b>99 999</b> <span class="rating-up">12%</span></p>
+                      <p>share <b>18%</b></p>
+                    </div>
+                    <div class="td">
+                      <p><b>99 999</b> <span class="rating-down">17%</span></p>
+                      <p><b>15%</b> of total</p>
+                    </div>
+                    <div class="td">
+                      <p><b>99 999</b> <span class="rating-up">12%</span></p>
+                      <p>share <b>18%</b></p>
+                    </div>
+                    <div class="td">
+                      <p><b>99 999</b> <span class="rating-down">17%</span></p>
+                      <p><b>15%</b> of total</p>
+                    </div>
+                    <div class="td">
+                      <p><b>99 999</b> <span class="rating-up">12%</span></p>
+                      <p>share <b>18%</b></p>
+                    </div>
+                  </div>
+                  <div class="tr">
+                    <div class="td"><img src="img/brokers/image26.png" alt=""></div>
+                    <div class="td">
+                      <p><b>99 999</b> <span class="rating-down">17%</span></p>
+                      <p><b>15%</b> of total</p>
+                    </div>
+                    <div class="td">
+                      <p><b>99 999</b> <span class="rating-up">12%</span></p>
+                      <p>share <b>18%</b></p>
+                    </div>
+                    <div class="td">
+                      <p><b>99 999</b> <span class="rating-down">17%</span></p>
+                      <p><b>15%</b> of total</p>
+                    </div>
+                    <div class="td">
+                      <p><b>99 999</b> <span class="rating-up">12%</span></p>
+                      <p>share <b>18%</b></p>
+                    </div>
+                    <div class="td">
+                      <p><b>99 999</b> <span class="rating-down">17%</span></p>
+                      <p><b>15%</b> of total</p>
+                    </div>
+                    <div class="td">
+                      <p><b>99 999</b> <span class="rating-up">12%</span></p>
+                      <p>share <b>18%</b></p>
+                    </div>
+                    <div class="td">
+                      <p><b>99 999</b> <span class="rating-down">17%</span></p>
+                      <p><b>15%</b> of total</p>
+                    </div>
+                    <div class="td">
+                      <p><b>99 999</b> <span class="rating-up">12%</span></p>
+                      <p>share <b>18%</b></p>
+                    </div>
+                    <div class="td">
+                      <p><b>99 999</b> <span class="rating-down">17%</span></p>
+                      <p><b>15%</b> of total</p>
+                    </div>
+                    <div class="td">
+                      <p><b>99 999</b> <span class="rating-up">12%</span></p>
+                      <p>share <b>18%</b></p>
+                    </div>
+                    <div class="td">
+                      <p><b>99 999</b> <span class="rating-down">17%</span></p>
+                      <p><b>15%</b> of total</p>
+                    </div>
+                    <div class="td">
+                      <p><b>99 999</b> <span class="rating-up">12%</span></p>
+                      <p>share <b>18%</b></p>
+                    </div>
+                  </div>
+                  <div class="tr">
+                    <div class="td"><img src="img/brokers/image27.png" alt=""></div>
+                    <div class="td">
+                      <p><b>99 999</b> <span class="rating-down">17%</span></p>
+                      <p><b>15%</b> of total</p>
+                    </div>
+                    <div class="td">
+                      <p><b>99 999</b> <span class="rating-up">12%</span></p>
+                      <p>share <b>18%</b></p>
+                    </div>
+                    <div class="td">
+                      <p><b>99 999</b> <span class="rating-down">17%</span></p>
+                      <p><b>15%</b> of total</p>
+                    </div>
+                    <div class="td">
+                      <p><b>99 999</b> <span class="rating-up">12%</span></p>
+                      <p>share <b>18%</b></p>
+                    </div>
+                    <div class="td">
+                      <p><b>99 999</b> <span class="rating-down">17%</span></p>
+                      <p><b>15%</b> of total</p>
+                    </div>
+                    <div class="td">
+                      <p><b>99 999</b> <span class="rating-up">12%</span></p>
+                      <p>share <b>18%</b></p>
+                    </div>
+                    <div class="td">
+                      <p><b>99 999</b> <span class="rating-down">17%</span></p>
+                      <p><b>15%</b> of total</p>
+                    </div>
+                    <div class="td">
+                      <p><b>99 999</b> <span class="rating-up">12%</span></p>
+                      <p>share <b>18%</b></p>
+                    </div>
+                    <div class="td">
+                      <p><b>99 999</b> <span class="rating-down">17%</span></p>
+                      <p><b>15%</b> of total</p>
+                    </div>
+                    <div class="td">
+                      <p><b>99 999</b> <span class="rating-up">12%</span></p>
+                      <p>share <b>18%</b></p>
+                    </div>
+                    <div class="td">
+                      <p><b>99 999</b> <span class="rating-down">17%</span></p>
+                      <p><b>15%</b> of total</p>
+                    </div>
+                    <div class="td">
+                      <p><b>99 999</b> <span class="rating-up">12%</span></p>
+                      <p>share <b>18%</b></p>
+                    </div>
+                  </div>
+                  <div class="tr">
+                    <div class="td"><img src="img/brokers/image28.png" alt=""></div>
+                    <div class="td">
+                      <p><b>99 999</b> <span class="rating-down">17%</span></p>
+                      <p><b>15%</b> of total</p>
+                    </div>
+                    <div class="td">
+                      <p><b>99 999</b> <span class="rating-up">12%</span></p>
+                      <p>share <b>18%</b></p>
+                    </div>
+                    <div class="td">
+                      <p><b>99 999</b> <span class="rating-down">17%</span></p>
+                      <p><b>15%</b> of total</p>
+                    </div>
+                    <div class="td">
+                      <p><b>99 999</b> <span class="rating-up">12%</span></p>
+                      <p>share <b>18%</b></p>
+                    </div>
+                    <div class="td">
+                      <p><b>99 999</b> <span class="rating-down">17%</span></p>
+                      <p><b>15%</b> of total</p>
+                    </div>
+                    <div class="td">
+                      <p><b>99 999</b> <span class="rating-up">12%</span></p>
+                      <p>share <b>18%</b></p>
+                    </div>
+                    <div class="td">
+                      <p><b>99 999</b> <span class="rating-down">17%</span></p>
+                      <p><b>15%</b> of total</p>
+                    </div>
+                    <div class="td">
+                      <p><b>99 999</b> <span class="rating-up">12%</span></p>
+                      <p>share <b>18%</b></p>
+                    </div>
+                    <div class="td">
+                      <p><b>99 999</b> <span class="rating-down">17%</span></p>
+                      <p><b>15%</b> of total</p>
+                    </div>
+                    <div class="td">
+                      <p><b>99 999</b> <span class="rating-up">12%</span></p>
+                      <p>share <b>18%</b></p>
+                    </div>
+                    <div class="td">
+                      <p><b>99 999</b> <span class="rating-down">17%</span></p>
+                      <p><b>15%</b> of total</p>
+                    </div>
+                    <div class="td">
+                      <p><b>99 999</b> <span class="rating-up">12%</span></p>
+                      <p>share <b>18%</b></p>
+                    </div>
+                  </div>
+                  <div class="tr">
+                    <div class="td"><img src="img/brokers/image29.png" alt=""></div>
+                    <div class="td">
+                      <p><b>99 999</b> <span class="rating-down">17%</span></p>
+                      <p><b>15%</b> of total</p>
+                    </div>
+                    <div class="td">
+                      <p><b>99 999</b> <span class="rating-up">12%</span></p>
+                      <p>share <b>18%</b></p>
+                    </div>
+                    <div class="td">
+                      <p><b>99 999</b> <span class="rating-down">17%</span></p>
+                      <p><b>15%</b> of total</p>
+                    </div>
+                    <div class="td">
+                      <p><b>99 999</b> <span class="rating-up">12%</span></p>
+                      <p>share <b>18%</b></p>
+                    </div>
+                    <div class="td">
+                      <p><b>99 999</b> <span class="rating-down">17%</span></p>
+                      <p><b>15%</b> of total</p>
+                    </div>
+                    <div class="td">
+                      <p><b>99 999</b> <span class="rating-up">12%</span></p>
+                      <p>share <b>18%</b></p>
+                    </div>
+                    <div class="td">
+                      <p><b>99 999</b> <span class="rating-down">17%</span></p>
+                      <p><b>15%</b> of total</p>
+                    </div>
+                    <div class="td">
+                      <p><b>99 999</b> <span class="rating-up">12%</span></p>
+                      <p>share <b>18%</b></p>
+                    </div>
+                    <div class="td">
+                      <p><b>99 999</b> <span class="rating-down">17%</span></p>
+                      <p><b>15%</b> of total</p>
+                    </div>
+                    <div class="td">
+                      <p><b>99 999</b> <span class="rating-up">12%</span></p>
+                      <p>share <b>18%</b></p>
+                    </div>
+                    <div class="td">
+                      <p><b>99 999</b> <span class="rating-down">17%</span></p>
+                      <p><b>15%</b> of total</p>
+                    </div>
+                    <div class="td">
+                      <p><b>99 999</b> <span class="rating-up">12%</span></p>
+                      <p>share <b>18%</b></p>
+                    </div>
+                  </div>
+                  <div class="tr">
+                    <div class="td"><img src="img/brokers/image21.png" alt=""></div>
+                    <div class="td">
+                      <p><b>99 999</b> <span class="rating-down">17%</span></p>
+                      <p><b>15%</b> of total</p>
+                    </div>
+                    <div class="td">
+                      <p><b>99 999</b> <span class="rating-up">12%</span></p>
+                      <p>share <b>18%</b></p>
+                    </div>
+                    <div class="td">
+                      <p><b>99 999</b> <span class="rating-down">17%</span></p>
+                      <p><b>15%</b> of total</p>
+                    </div>
+                    <div class="td">
+                      <p><b>99 999</b> <span class="rating-up">12%</span></p>
+                      <p>share <b>18%</b></p>
+                    </div>
+                    <div class="td">
+                      <p><b>99 999</b> <span class="rating-down">17%</span></p>
+                      <p><b>15%</b> of total</p>
+                    </div>
+                    <div class="td">
+                      <p><b>99 999</b> <span class="rating-up">12%</span></p>
+                      <p>share <b>18%</b></p>
+                    </div>
+                    <div class="td">
+                      <p><b>99 999</b> <span class="rating-down">17%</span></p>
+                      <p><b>15%</b> of total</p>
+                    </div>
+                    <div class="td">
+                      <p><b>99 999</b> <span class="rating-up">12%</span></p>
+                      <p>share <b>18%</b></p>
+                    </div>
+                    <div class="td">
+                      <p><b>99 999</b> <span class="rating-down">17%</span></p>
+                      <p><b>15%</b> of total</p>
+                    </div>
+                    <div class="td">
+                      <p><b>99 999</b> <span class="rating-up">12%</span></p>
+                      <p>share <b>18%</b></p>
+                    </div>
+                    <div class="td">
+                      <p><b>99 999</b> <span class="rating-down">17%</span></p>
+                      <p><b>15%</b> of total</p>
+                    </div>
+                    <div class="td">
+                      <p><b>99 999</b> <span class="rating-up">12%</span></p>
+                      <p>share <b>18%</b></p>
+                    </div>
+                  </div>
+                  <div class="tr">
+                    <div class="td"><img src="img/brokers/image22.png" alt=""></div>
+                    <div class="td">
+                      <p><b>99 999</b> <span class="rating-down">17%</span></p>
+                      <p><b>15%</b> of total</p>
+                    </div>
+                    <div class="td">
+                      <p><b>99 999</b> <span class="rating-up">12%</span></p>
+                      <p>share <b>18%</b></p>
+                    </div>
+                    <div class="td">
+                      <p><b>99 999</b> <span class="rating-down">17%</span></p>
+                      <p><b>15%</b> of total</p>
+                    </div>
+                    <div class="td">
+                      <p><b>99 999</b> <span class="rating-up">12%</span></p>
+                      <p>share <b>18%</b></p>
+                    </div>
+                    <div class="td">
+                      <p><b>99 999</b> <span class="rating-down">17%</span></p>
+                      <p><b>15%</b> of total</p>
+                    </div>
+                    <div class="td">
+                      <p><b>99 999</b> <span class="rating-up">12%</span></p>
+                      <p>share <b>18%</b></p>
+                    </div>
+                    <div class="td">
+                      <p><b>99 999</b> <span class="rating-down">17%</span></p>
+                      <p><b>15%</b> of total</p>
+                    </div>
+                    <div class="td">
+                      <p><b>99 999</b> <span class="rating-up">12%</span></p>
+                      <p>share <b>18%</b></p>
+                    </div>
+                    <div class="td">
+                      <p><b>99 999</b> <span class="rating-down">17%</span></p>
+                      <p><b>15%</b> of total</p>
+                    </div>
+                    <div class="td">
+                      <p><b>99 999</b> <span class="rating-up">12%</span></p>
+                      <p>share <b>18%</b></p>
+                    </div>
+                    <div class="td">
+                      <p><b>99 999</b> <span class="rating-down">17%</span></p>
+                      <p><b>15%</b> of total</p>
+                    </div>
+                    <div class="td">
+                      <p><b>99 999</b> <span class="rating-up">12%</span></p>
+                      <p>share <b>18%</b></p>
+                    </div>
+                  </div>
+                  <div class="tr">
+                    <div class="td"><img src="img/brokers/image23.png" alt=""></div>
+                    <div class="td">
+                      <p><b>99 999</b> <span class="rating-down">17%</span></p>
+                      <p><b>15%</b> of total</p>
+                    </div>
+                    <div class="td">
+                      <p><b>99 999</b> <span class="rating-up">12%</span></p>
+                      <p>share <b>18%</b></p>
+                    </div>
+                    <div class="td">
+                      <p><b>99 999</b> <span class="rating-down">17%</span></p>
+                      <p><b>15%</b> of total</p>
+                    </div>
+                    <div class="td">
+                      <p><b>99 999</b> <span class="rating-up">12%</span></p>
+                      <p>share <b>18%</b></p>
+                    </div>
+                    <div class="td">
+                      <p><b>99 999</b> <span class="rating-down">17%</span></p>
+                      <p><b>15%</b> of total</p>
+                    </div>
+                    <div class="td">
+                      <p><b>99 999</b> <span class="rating-up">12%</span></p>
+                      <p>share <b>18%</b></p>
+                    </div>
+                    <div class="td">
+                      <p><b>99 999</b> <span class="rating-down">17%</span></p>
+                      <p><b>15%</b> of total</p>
+                    </div>
+                    <div class="td">
+                      <p><b>99 999</b> <span class="rating-up">12%</span></p>
+                      <p>share <b>18%</b></p>
+                    </div>
+                    <div class="td">
+                      <p><b>99 999</b> <span class="rating-down">17%</span></p>
+                      <p><b>15%</b> of total</p>
+                    </div>
+                    <div class="td">
+                      <p><b>99 999</b> <span class="rating-up">12%</span></p>
+                      <p>share <b>18%</b></p>
+                    </div>
+                    <div class="td">
+                      <p><b>99 999</b> <span class="rating-down">17%</span></p>
+                      <p><b>15%</b> of total</p>
+                    </div>
+                    <div class="td">
+                      <p><b>99 999</b> <span class="rating-up">12%</span></p>
+                      <p>share <b>18%</b></p>
+                    </div>
+                  </div>
+                  <div class="tr">
+                    <div class="td"><img src="img/brokers/image24.png" alt=""></div>
+                    <div class="td">
+                      <p><b>99 999</b> <span class="rating-down">17%</span></p>
+                      <p><b>15%</b> of total</p>
+                    </div>
+                    <div class="td">
+                      <p><b>99 999</b> <span class="rating-up">12%</span></p>
+                      <p>share <b>18%</b></p>
+                    </div>
+                    <div class="td">
+                      <p><b>99 999</b> <span class="rating-down">17%</span></p>
+                      <p><b>15%</b> of total</p>
+                    </div>
+                    <div class="td">
+                      <p><b>99 999</b> <span class="rating-up">12%</span></p>
+                      <p>share <b>18%</b></p>
+                    </div>
+                    <div class="td">
+                      <p><b>99 999</b> <span class="rating-down">17%</span></p>
+                      <p><b>15%</b> of total</p>
+                    </div>
+                    <div class="td">
+                      <p><b>99 999</b> <span class="rating-up">12%</span></p>
+                      <p>share <b>18%</b></p>
+                    </div>
+                    <div class="td">
+                      <p><b>99 999</b> <span class="rating-down">17%</span></p>
+                      <p><b>15%</b> of total</p>
+                    </div>
+                    <div class="td">
+                      <p><b>99 999</b> <span class="rating-up">12%</span></p>
+                      <p>share <b>18%</b></p>
+                    </div>
+                    <div class="td">
+                      <p><b>99 999</b> <span class="rating-down">17%</span></p>
+                      <p><b>15%</b> of total</p>
+                    </div>
+                    <div class="td">
+                      <p><b>99 999</b> <span class="rating-up">12%</span></p>
+                      <p>share <b>18%</b></p>
+                    </div>
+                    <div class="td">
+                      <p><b>99 999</b> <span class="rating-down">17%</span></p>
+                      <p><b>15%</b> of total</p>
+                    </div>
+                    <div class="td">
+                      <p><b>99 999</b> <span class="rating-up">12%</span></p>
+                      <p>share <b>18%</b></p>
+                    </div>
+                  </div>
+                  <div class="tr">
+                    <div class="td"><img src="img/brokers/image25.png" alt=""></div>
+                    <div class="td">
+                      <p><b>99 999</b> <span class="rating-down">17%</span></p>
+                      <p><b>15%</b> of total</p>
+                    </div>
+                    <div class="td">
+                      <p><b>99 999</b> <span class="rating-up">12%</span></p>
+                      <p>share <b>18%</b></p>
+                    </div>
+                    <div class="td">
+                      <p><b>99 999</b> <span class="rating-down">17%</span></p>
+                      <p><b>15%</b> of total</p>
+                    </div>
+                    <div class="td">
+                      <p><b>99 999</b> <span class="rating-up">12%</span></p>
+                      <p>share <b>18%</b></p>
+                    </div>
+                    <div class="td">
+                      <p><b>99 999</b> <span class="rating-down">17%</span></p>
+                      <p><b>15%</b> of total</p>
+                    </div>
+                    <div class="td">
+                      <p><b>99 999</b> <span class="rating-up">12%</span></p>
+                      <p>share <b>18%</b></p>
+                    </div>
+                    <div class="td">
+                      <p><b>99 999</b> <span class="rating-down">17%</span></p>
+                      <p><b>15%</b> of total</p>
+                    </div>
+                    <div class="td">
+                      <p><b>99 999</b> <span class="rating-up">12%</span></p>
+                      <p>share <b>18%</b></p>
+                    </div>
+                    <div class="td">
+                      <p><b>99 999</b> <span class="rating-down">17%</span></p>
+                      <p><b>15%</b> of total</p>
+                    </div>
+                    <div class="td">
+                      <p><b>99 999</b> <span class="rating-up">12%</span></p>
+                      <p>share <b>18%</b></p>
+                    </div>
+                    <div class="td">
+                      <p><b>99 999</b> <span class="rating-down">17%</span></p>
+                      <p><b>15%</b> of total</p>
+                    </div>
+                    <div class="td">
+                      <p><b>99 999</b> <span class="rating-up">12%</span></p>
+                      <p>share <b>18%</b></p>
+                    </div>
+                  </div>
+                  <div class="tr">
+                    <div class="td"><img src="img/brokers/image26.png" alt=""></div>
+                    <div class="td">
+                      <p><b>99 999</b> <span class="rating-down">17%</span></p>
+                      <p><b>15%</b> of total</p>
+                    </div>
+                    <div class="td">
+                      <p><b>99 999</b> <span class="rating-up">12%</span></p>
+                      <p>share <b>18%</b></p>
+                    </div>
+                    <div class="td">
+                      <p><b>99 999</b> <span class="rating-down">17%</span></p>
+                      <p><b>15%</b> of total</p>
+                    </div>
+                    <div class="td">
+                      <p><b>99 999</b> <span class="rating-up">12%</span></p>
+                      <p>share <b>18%</b></p>
+                    </div>
+                    <div class="td">
+                      <p><b>99 999</b> <span class="rating-down">17%</span></p>
+                      <p><b>15%</b> of total</p>
+                    </div>
+                    <div class="td">
+                      <p><b>99 999</b> <span class="rating-up">12%</span></p>
+                      <p>share <b>18%</b></p>
+                    </div>
+                    <div class="td">
+                      <p><b>99 999</b> <span class="rating-down">17%</span></p>
+                      <p><b>15%</b> of total</p>
+                    </div>
+                    <div class="td">
+                      <p><b>99 999</b> <span class="rating-up">12%</span></p>
+                      <p>share <b>18%</b></p>
+                    </div>
+                    <div class="td">
+                      <p><b>99 999</b> <span class="rating-down">17%</span></p>
+                      <p><b>15%</b> of total</p>
+                    </div>
+                    <div class="td">
+                      <p><b>99 999</b> <span class="rating-up">12%</span></p>
+                      <p>share <b>18%</b></p>
+                    </div>
+                    <div class="td">
+                      <p><b>99 999</b> <span class="rating-down">17%</span></p>
+                      <p><b>15%</b> of total</p>
+                    </div>
+                    <div class="td">
+                      <p><b>99 999</b> <span class="rating-up">12%</span></p>
+                      <p>share <b>18%</b></p>
+                    </div>
+                  </div>
+                  <div class="tr">
+                    <div class="td"><img src="img/brokers/image27.png" alt=""></div>
+                    <div class="td">
+                      <p><b>99 999</b> <span class="rating-down">17%</span></p>
+                      <p><b>15%</b> of total</p>
+                    </div>
+                    <div class="td">
+                      <p><b>99 999</b> <span class="rating-up">12%</span></p>
+                      <p>share <b>18%</b></p>
+                    </div>
+                    <div class="td">
+                      <p><b>99 999</b> <span class="rating-down">17%</span></p>
+                      <p><b>15%</b> of total</p>
+                    </div>
+                    <div class="td">
+                      <p><b>99 999</b> <span class="rating-up">12%</span></p>
+                      <p>share <b>18%</b></p>
+                    </div>
+                    <div class="td">
+                      <p><b>99 999</b> <span class="rating-down">17%</span></p>
+                      <p><b>15%</b> of total</p>
+                    </div>
+                    <div class="td">
+                      <p><b>99 999</b> <span class="rating-up">12%</span></p>
+                      <p>share <b>18%</b></p>
+                    </div>
+                    <div class="td">
+                      <p><b>99 999</b> <span class="rating-down">17%</span></p>
+                      <p><b>15%</b> of total</p>
+                    </div>
+                    <div class="td">
+                      <p><b>99 999</b> <span class="rating-up">12%</span></p>
+                      <p>share <b>18%</b></p>
+                    </div>
+                    <div class="td">
+                      <p><b>99 999</b> <span class="rating-down">17%</span></p>
+                      <p><b>15%</b> of total</p>
+                    </div>
+                    <div class="td">
+                      <p><b>99 999</b> <span class="rating-up">12%</span></p>
+                      <p>share <b>18%</b></p>
+                    </div>
+                    <div class="td">
+                      <p><b>99 999</b> <span class="rating-down">17%</span></p>
+                      <p><b>15%</b> of total</p>
+                    </div>
+                    <div class="td">
+                      <p><b>99 999</b> <span class="rating-up">12%</span></p>
+                      <p>share <b>18%</b></p>
+                    </div>
+                  </div>
+                  <div class="tr">
+                    <div class="td"><img src="img/brokers/image28.png" alt=""></div>
+                    <div class="td">
+                      <p><b>99 999</b> <span class="rating-down">17%</span></p>
+                      <p><b>15%</b> of total</p>
+                    </div>
+                    <div class="td">
+                      <p><b>99 999</b> <span class="rating-up">12%</span></p>
+                      <p>share <b>18%</b></p>
+                    </div>
+                    <div class="td">
+                      <p><b>99 999</b> <span class="rating-down">17%</span></p>
+                      <p><b>15%</b> of total</p>
+                    </div>
+                    <div class="td">
+                      <p><b>99 999</b> <span class="rating-up">12%</span></p>
+                      <p>share <b>18%</b></p>
+                    </div>
+                    <div class="td">
+                      <p><b>99 999</b> <span class="rating-down">17%</span></p>
+                      <p><b>15%</b> of total</p>
+                    </div>
+                    <div class="td">
+                      <p><b>99 999</b> <span class="rating-up">12%</span></p>
+                      <p>share <b>18%</b></p>
+                    </div>
+                    <div class="td">
+                      <p><b>99 999</b> <span class="rating-down">17%</span></p>
+                      <p><b>15%</b> of total</p>
+                    </div>
+                    <div class="td">
+                      <p><b>99 999</b> <span class="rating-up">12%</span></p>
+                      <p>share <b>18%</b></p>
+                    </div>
+                    <div class="td">
+                      <p><b>99 999</b> <span class="rating-down">17%</span></p>
+                      <p><b>15%</b> of total</p>
+                    </div>
+                    <div class="td">
+                      <p><b>99 999</b> <span class="rating-up">12%</span></p>
+                      <p>share <b>18%</b></p>
+                    </div>
+                    <div class="td">
+                      <p><b>99 999</b> <span class="rating-down">17%</span></p>
+                      <p><b>15%</b> of total</p>
+                    </div>
+                    <div class="td">
+                      <p><b>99 999</b> <span class="rating-up">12%</span></p>
+                      <p>share <b>18%</b></p>
+                    </div>
+                  </div>
+                  <div class="tr">
+                    <div class="td"><img src="img/brokers/image29.png" alt=""></div>
+                    <div class="td">
+                      <p><b>99 999</b> <span class="rating-down">17%</span></p>
+                      <p><b>15%</b> of total</p>
+                    </div>
+                    <div class="td">
+                      <p><b>99 999</b> <span class="rating-up">12%</span></p>
+                      <p>share <b>18%</b></p>
+                    </div>
+                    <div class="td">
+                      <p><b>99 999</b> <span class="rating-down">17%</span></p>
+                      <p><b>15%</b> of total</p>
+                    </div>
+                    <div class="td">
+                      <p><b>99 999</b> <span class="rating-up">12%</span></p>
+                      <p>share <b>18%</b></p>
+                    </div>
+                    <div class="td">
+                      <p><b>99 999</b> <span class="rating-down">17%</span></p>
+                      <p><b>15%</b> of total</p>
+                    </div>
+                    <div class="td">
+                      <p><b>99 999</b> <span class="rating-up">12%</span></p>
+                      <p>share <b>18%</b></p>
+                    </div>
+                    <div class="td">
+                      <p><b>99 999</b> <span class="rating-down">17%</span></p>
+                      <p><b>15%</b> of total</p>
+                    </div>
+                    <div class="td">
+                      <p><b>99 999</b> <span class="rating-up">12%</span></p>
+                      <p>share <b>18%</b></p>
+                    </div>
+                    <div class="td">
+                      <p><b>99 999</b> <span class="rating-down">17%</span></p>
+                      <p><b>15%</b> of total</p>
+                    </div>
+                    <div class="td">
+                      <p><b>99 999</b> <span class="rating-up">12%</span></p>
+                      <p>share <b>18%</b></p>
+                    </div>
+                    <div class="td">
+                      <p><b>99 999</b> <span class="rating-down">17%</span></p>
+                      <p><b>15%</b> of total</p>
+                    </div>
+                    <div class="td">
+                      <p><b>99 999</b> <span class="rating-up">12%</span></p>
+                      <p>share <b>18%</b></p>
+                    </div>
+                  </div>
+                  <div class="tr">
+                    <div class="td"><img src="img/brokers/image21.png" alt=""></div>
+                    <div class="td">
+                      <p><b>99 999</b> <span class="rating-down">17%</span></p>
+                      <p><b>15%</b> of total</p>
+                    </div>
+                    <div class="td">
+                      <p><b>99 999</b> <span class="rating-up">12%</span></p>
+                      <p>share <b>18%</b></p>
+                    </div>
+                    <div class="td">
+                      <p><b>99 999</b> <span class="rating-down">17%</span></p>
+                      <p><b>15%</b> of total</p>
+                    </div>
+                    <div class="td">
+                      <p><b>99 999</b> <span class="rating-up">12%</span></p>
+                      <p>share <b>18%</b></p>
+                    </div>
+                    <div class="td">
+                      <p><b>99 999</b> <span class="rating-down">17%</span></p>
+                      <p><b>15%</b> of total</p>
+                    </div>
+                    <div class="td">
+                      <p><b>99 999</b> <span class="rating-up">12%</span></p>
+                      <p>share <b>18%</b></p>
+                    </div>
+                    <div class="td">
+                      <p><b>99 999</b> <span class="rating-down">17%</span></p>
+                      <p><b>15%</b> of total</p>
+                    </div>
+                    <div class="td">
+                      <p><b>99 999</b> <span class="rating-up">12%</span></p>
+                      <p>share <b>18%</b></p>
+                    </div>
+                    <div class="td">
+                      <p><b>99 999</b> <span class="rating-down">17%</span></p>
+                      <p><b>15%</b> of total</p>
+                    </div>
+                    <div class="td">
+                      <p><b>99 999</b> <span class="rating-up">12%</span></p>
+                      <p>share <b>18%</b></p>
+                    </div>
+                    <div class="td">
+                      <p><b>99 999</b> <span class="rating-down">17%</span></p>
+                      <p><b>15%</b> of total</p>
+                    </div>
+                    <div class="td">
+                      <p><b>99 999</b> <span class="rating-up">12%</span></p>
+                      <p>share <b>18%</b></p>
+                    </div>
+                  </div>
+                  <div class="tr">
+                    <div class="td"><img src="img/brokers/image22.png" alt=""></div>
+                    <div class="td">
+                      <p><b>99 999</b> <span class="rating-down">17%</span></p>
+                      <p><b>15%</b> of total</p>
+                    </div>
+                    <div class="td">
+                      <p><b>99 999</b> <span class="rating-up">12%</span></p>
+                      <p>share <b>18%</b></p>
+                    </div>
+                    <div class="td">
+                      <p><b>99 999</b> <span class="rating-down">17%</span></p>
+                      <p><b>15%</b> of total</p>
+                    </div>
+                    <div class="td">
+                      <p><b>99 999</b> <span class="rating-up">12%</span></p>
+                      <p>share <b>18%</b></p>
+                    </div>
+                    <div class="td">
+                      <p><b>99 999</b> <span class="rating-down">17%</span></p>
+                      <p><b>15%</b> of total</p>
+                    </div>
+                    <div class="td">
+                      <p><b>99 999</b> <span class="rating-up">12%</span></p>
+                      <p>share <b>18%</b></p>
+                    </div>
+                    <div class="td">
+                      <p><b>99 999</b> <span class="rating-down">17%</span></p>
+                      <p><b>15%</b> of total</p>
+                    </div>
+                    <div class="td">
+                      <p><b>99 999</b> <span class="rating-up">12%</span></p>
+                      <p>share <b>18%</b></p>
+                    </div>
+                    <div class="td">
+                      <p><b>99 999</b> <span class="rating-down">17%</span></p>
+                      <p><b>15%</b> of total</p>
+                    </div>
+                    <div class="td">
+                      <p><b>99 999</b> <span class="rating-up">12%</span></p>
+                      <p>share <b>18%</b></p>
+                    </div>
+                    <div class="td">
+                      <p><b>99 999</b> <span class="rating-down">17%</span></p>
+                      <p><b>15%</b> of total</p>
+                    </div>
+                    <div class="td">
+                      <p><b>99 999</b> <span class="rating-up">12%</span></p>
+                      <p>share <b>18%</b></p>
+                    </div>
+                  </div>
+                  <div class="tr">
+                    <div class="td"><img src="img/brokers/image23.png" alt=""></div>
+                    <div class="td">
+                      <p><b>99 999</b> <span class="rating-down">17%</span></p>
+                      <p><b>15%</b> of total</p>
+                    </div>
+                    <div class="td">
+                      <p><b>99 999</b> <span class="rating-up">12%</span></p>
+                      <p>share <b>18%</b></p>
+                    </div>
+                    <div class="td">
+                      <p><b>99 999</b> <span class="rating-down">17%</span></p>
+                      <p><b>15%</b> of total</p>
+                    </div>
+                    <div class="td">
+                      <p><b>99 999</b> <span class="rating-up">12%</span></p>
+                      <p>share <b>18%</b></p>
+                    </div>
+                    <div class="td">
+                      <p><b>99 999</b> <span class="rating-down">17%</span></p>
+                      <p><b>15%</b> of total</p>
+                    </div>
+                    <div class="td">
+                      <p><b>99 999</b> <span class="rating-up">12%</span></p>
+                      <p>share <b>18%</b></p>
+                    </div>
+                    <div class="td">
+                      <p><b>99 999</b> <span class="rating-down">17%</span></p>
+                      <p><b>15%</b> of total</p>
+                    </div>
+                    <div class="td">
+                      <p><b>99 999</b> <span class="rating-up">12%</span></p>
+                      <p>share <b>18%</b></p>
+                    </div>
+                    <div class="td">
+                      <p><b>99 999</b> <span class="rating-down">17%</span></p>
+                      <p><b>15%</b> of total</p>
+                    </div>
+                    <div class="td">
+                      <p><b>99 999</b> <span class="rating-up">12%</span></p>
+                      <p>share <b>18%</b></p>
+                    </div>
+                    <div class="td">
+                      <p><b>99 999</b> <span class="rating-down">17%</span></p>
+                      <p><b>15%</b> of total</p>
+                    </div>
+                    <div class="td">
+                      <p><b>99 999</b> <span class="rating-up">12%</span></p>
+                      <p>share <b>18%</b></p>
+                    </div>
+                  </div>
+                  <div class="tr">
+                    <div class="td"><img src="img/brokers/image24.png" alt=""></div>
+                    <div class="td">
+                      <p><b>99 999</b> <span class="rating-down">17%</span></p>
+                      <p><b>15%</b> of total</p>
+                    </div>
+                    <div class="td">
+                      <p><b>99 999</b> <span class="rating-up">12%</span></p>
+                      <p>share <b>18%</b></p>
+                    </div>
+                    <div class="td">
+                      <p><b>99 999</b> <span class="rating-down">17%</span></p>
+                      <p><b>15%</b> of total</p>
+                    </div>
+                    <div class="td">
+                      <p><b>99 999</b> <span class="rating-up">12%</span></p>
+                      <p>share <b>18%</b></p>
+                    </div>
+                    <div class="td">
+                      <p><b>99 999</b> <span class="rating-down">17%</span></p>
+                      <p><b>15%</b> of total</p>
+                    </div>
+                    <div class="td">
+                      <p><b>99 999</b> <span class="rating-up">12%</span></p>
+                      <p>share <b>18%</b></p>
+                    </div>
+                    <div class="td">
+                      <p><b>99 999</b> <span class="rating-down">17%</span></p>
+                      <p><b>15%</b> of total</p>
+                    </div>
+                    <div class="td">
+                      <p><b>99 999</b> <span class="rating-up">12%</span></p>
+                      <p>share <b>18%</b></p>
+                    </div>
+                    <div class="td">
+                      <p><b>99 999</b> <span class="rating-down">17%</span></p>
+                      <p><b>15%</b> of total</p>
+                    </div>
+                    <div class="td">
+                      <p><b>99 999</b> <span class="rating-up">12%</span></p>
+                      <p>share <b>18%</b></p>
+                    </div>
+                    <div class="td">
+                      <p><b>99 999</b> <span class="rating-down">17%</span></p>
+                      <p><b>15%</b> of total</p>
+                    </div>
+                    <div class="td">
+                      <p><b>99 999</b> <span class="rating-up">12%</span></p>
+                      <p>share <b>18%</b></p>
+                    </div>
+                  </div>
+                  <div class="tr">
+                    <div class="td"><img src="img/brokers/image25.png" alt=""></div>
+                    <div class="td">
+                      <p><b>99 999</b> <span class="rating-down">17%</span></p>
+                      <p><b>15%</b> of total</p>
+                    </div>
+                    <div class="td">
+                      <p><b>99 999</b> <span class="rating-up">12%</span></p>
+                      <p>share <b>18%</b></p>
+                    </div>
+                    <div class="td">
+                      <p><b>99 999</b> <span class="rating-down">17%</span></p>
+                      <p><b>15%</b> of total</p>
+                    </div>
+                    <div class="td">
+                      <p><b>99 999</b> <span class="rating-up">12%</span></p>
+                      <p>share <b>18%</b></p>
+                    </div>
+                    <div class="td">
+                      <p><b>99 999</b> <span class="rating-down">17%</span></p>
+                      <p><b>15%</b> of total</p>
+                    </div>
+                    <div class="td">
+                      <p><b>99 999</b> <span class="rating-up">12%</span></p>
+                      <p>share <b>18%</b></p>
+                    </div>
+                    <div class="td">
+                      <p><b>99 999</b> <span class="rating-down">17%</span></p>
+                      <p><b>15%</b> of total</p>
+                    </div>
+                    <div class="td">
+                      <p><b>99 999</b> <span class="rating-up">12%</span></p>
+                      <p>share <b>18%</b></p>
+                    </div>
+                    <div class="td">
+                      <p><b>99 999</b> <span class="rating-down">17%</span></p>
+                      <p><b>15%</b> of total</p>
+                    </div>
+                    <div class="td">
+                      <p><b>99 999</b> <span class="rating-up">12%</span></p>
+                      <p>share <b>18%</b></p>
+                    </div>
+                    <div class="td">
+                      <p><b>99 999</b> <span class="rating-down">17%</span></p>
+                      <p><b>15%</b> of total</p>
+                    </div>
+                    <div class="td">
+                      <p><b>99 999</b> <span class="rating-up">12%</span></p>
+                      <p>share <b>18%</b></p>
+                    </div>
+                  </div>
+                  <div class="tr">
+                    <div class="td"><img src="img/brokers/image26.png" alt=""></div>
+                    <div class="td">
+                      <p><b>99 999</b> <span class="rating-down">17%</span></p>
+                      <p><b>15%</b> of total</p>
+                    </div>
+                    <div class="td">
+                      <p><b>99 999</b> <span class="rating-up">12%</span></p>
+                      <p>share <b>18%</b></p>
+                    </div>
+                    <div class="td">
+                      <p><b>99 999</b> <span class="rating-down">17%</span></p>
+                      <p><b>15%</b> of total</p>
+                    </div>
+                    <div class="td">
+                      <p><b>99 999</b> <span class="rating-up">12%</span></p>
+                      <p>share <b>18%</b></p>
+                    </div>
+                    <div class="td">
+                      <p><b>99 999</b> <span class="rating-down">17%</span></p>
+                      <p><b>15%</b> of total</p>
+                    </div>
+                    <div class="td">
+                      <p><b>99 999</b> <span class="rating-up">12%</span></p>
+                      <p>share <b>18%</b></p>
+                    </div>
+                    <div class="td">
+                      <p><b>99 999</b> <span class="rating-down">17%</span></p>
+                      <p><b>15%</b> of total</p>
+                    </div>
+                    <div class="td">
+                      <p><b>99 999</b> <span class="rating-up">12%</span></p>
+                      <p>share <b>18%</b></p>
+                    </div>
+                    <div class="td">
+                      <p><b>99 999</b> <span class="rating-down">17%</span></p>
+                      <p><b>15%</b> of total</p>
+                    </div>
+                    <div class="td">
+                      <p><b>99 999</b> <span class="rating-up">12%</span></p>
+                      <p>share <b>18%</b></p>
+                    </div>
+                    <div class="td">
+                      <p><b>99 999</b> <span class="rating-down">17%</span></p>
+                      <p><b>15%</b> of total</p>
+                    </div>
+                    <div class="td">
+                      <p><b>99 999</b> <span class="rating-up">12%</span></p>
+                      <p>share <b>18%</b></p>
+                    </div>
+                  </div>
+                  <div class="tr">
+                    <div class="td"><img src="img/brokers/image27.png" alt=""></div>
+                    <div class="td">
+                      <p><b>99 999</b> <span class="rating-down">17%</span></p>
+                      <p><b>15%</b> of total</p>
+                    </div>
+                    <div class="td">
+                      <p><b>99 999</b> <span class="rating-up">12%</span></p>
+                      <p>share <b>18%</b></p>
+                    </div>
+                    <div class="td">
+                      <p><b>99 999</b> <span class="rating-down">17%</span></p>
+                      <p><b>15%</b> of total</p>
+                    </div>
+                    <div class="td">
+                      <p><b>99 999</b> <span class="rating-up">12%</span></p>
+                      <p>share <b>18%</b></p>
+                    </div>
+                    <div class="td">
+                      <p><b>99 999</b> <span class="rating-down">17%</span></p>
+                      <p><b>15%</b> of total</p>
+                    </div>
+                    <div class="td">
+                      <p><b>99 999</b> <span class="rating-up">12%</span></p>
+                      <p>share <b>18%</b></p>
+                    </div>
+                    <div class="td">
+                      <p><b>99 999</b> <span class="rating-down">17%</span></p>
+                      <p><b>15%</b> of total</p>
+                    </div>
+                    <div class="td">
+                      <p><b>99 999</b> <span class="rating-up">12%</span></p>
+                      <p>share <b>18%</b></p>
+                    </div>
+                    <div class="td">
+                      <p><b>99 999</b> <span class="rating-down">17%</span></p>
+                      <p><b>15%</b> of total</p>
+                    </div>
+                    <div class="td">
+                      <p><b>99 999</b> <span class="rating-up">12%</span></p>
+                      <p>share <b>18%</b></p>
+                    </div>
+                    <div class="td">
+                      <p><b>99 999</b> <span class="rating-down">17%</span></p>
+                      <p><b>15%</b> of total</p>
+                    </div>
+                    <div class="td">
+                      <p><b>99 999</b> <span class="rating-up">12%</span></p>
+                      <p>share <b>18%</b></p>
+                    </div>
+                  </div>
+                  <div class="tr">
+                    <div class="td"><img src="img/brokers/image28.png" alt=""></div>
+                    <div class="td">
+                      <p><b>99 999</b> <span class="rating-down">17%</span></p>
+                      <p><b>15%</b> of total</p>
+                    </div>
+                    <div class="td">
+                      <p><b>99 999</b> <span class="rating-up">12%</span></p>
+                      <p>share <b>18%</b></p>
+                    </div>
+                    <div class="td">
+                      <p><b>99 999</b> <span class="rating-down">17%</span></p>
+                      <p><b>15%</b> of total</p>
+                    </div>
+                    <div class="td">
+                      <p><b>99 999</b> <span class="rating-up">12%</span></p>
+                      <p>share <b>18%</b></p>
+                    </div>
+                    <div class="td">
+                      <p><b>99 999</b> <span class="rating-down">17%</span></p>
+                      <p><b>15%</b> of total</p>
+                    </div>
+                    <div class="td">
+                      <p><b>99 999</b> <span class="rating-up">12%</span></p>
+                      <p>share <b>18%</b></p>
+                    </div>
+                    <div class="td">
+                      <p><b>99 999</b> <span class="rating-down">17%</span></p>
+                      <p><b>15%</b> of total</p>
+                    </div>
+                    <div class="td">
+                      <p><b>99 999</b> <span class="rating-up">12%</span></p>
+                      <p>share <b>18%</b></p>
+                    </div>
+                    <div class="td">
+                      <p><b>99 999</b> <span class="rating-down">17%</span></p>
+                      <p><b>15%</b> of total</p>
+                    </div>
+                    <div class="td">
+                      <p><b>99 999</b> <span class="rating-up">12%</span></p>
+                      <p>share <b>18%</b></p>
+                    </div>
+                    <div class="td">
+                      <p><b>99 999</b> <span class="rating-down">17%</span></p>
+                      <p><b>15%</b> of total</p>
+                    </div>
+                    <div class="td">
+                      <p><b>99 999</b> <span class="rating-up">12%</span></p>
+                      <p>share <b>18%</b></p>
+                    </div>
+                  </div>
+                  <div class="tr">
+                    <div class="td"><img src="img/brokers/image29.png" alt=""></div>
+                    <div class="td">
+                      <p><b>99 999</b> <span class="rating-down">17%</span></p>
+                      <p><b>15%</b> of total</p>
+                    </div>
+                    <div class="td">
+                      <p><b>99 999</b> <span class="rating-up">12%</span></p>
+                      <p>share <b>18%</b></p>
+                    </div>
+                    <div class="td">
+                      <p><b>99 999</b> <span class="rating-down">17%</span></p>
+                      <p><b>15%</b> of total</p>
+                    </div>
+                    <div class="td">
+                      <p><b>99 999</b> <span class="rating-up">12%</span></p>
+                      <p>share <b>18%</b></p>
+                    </div>
+                    <div class="td">
+                      <p><b>99 999</b> <span class="rating-down">17%</span></p>
+                      <p><b>15%</b> of total</p>
+                    </div>
+                    <div class="td">
+                      <p><b>99 999</b> <span class="rating-up">12%</span></p>
+                      <p>share <b>18%</b></p>
+                    </div>
+                    <div class="td">
+                      <p><b>99 999</b> <span class="rating-down">17%</span></p>
+                      <p><b>15%</b> of total</p>
+                    </div>
+                    <div class="td">
+                      <p><b>99 999</b> <span class="rating-up">12%</span></p>
+                      <p>share <b>18%</b></p>
+                    </div>
+                    <div class="td">
+                      <p><b>99 999</b> <span class="rating-down">17%</span></p>
+                      <p><b>15%</b> of total</p>
+                    </div>
+                    <div class="td">
+                      <p><b>99 999</b> <span class="rating-up">12%</span></p>
+                      <p>share <b>18%</b></p>
+                    </div>
+                    <div class="td">
+                      <p><b>99 999</b> <span class="rating-down">17%</span></p>
+                      <p><b>15%</b> of total</p>
+                    </div>
+                    <div class="td">
+                      <p><b>99 999</b> <span class="rating-up">12%</span></p>
+                      <p>share <b>18%</b></p>
+                    </div>
+                  </div>
+                  <div class="tr">
+                    <div class="td"><img src="img/brokers/image21.png" alt=""></div>
+                    <div class="td">
+                      <p><b>99 999</b> <span class="rating-down">17%</span></p>
+                      <p><b>15%</b> of total</p>
+                    </div>
+                    <div class="td">
+                      <p><b>99 999</b> <span class="rating-up">12%</span></p>
+                      <p>share <b>18%</b></p>
+                    </div>
+                    <div class="td">
+                      <p><b>99 999</b> <span class="rating-down">17%</span></p>
+                      <p><b>15%</b> of total</p>
+                    </div>
+                    <div class="td">
+                      <p><b>99 999</b> <span class="rating-up">12%</span></p>
+                      <p>share <b>18%</b></p>
+                    </div>
+                    <div class="td">
+                      <p><b>99 999</b> <span class="rating-down">17%</span></p>
+                      <p><b>15%</b> of total</p>
+                    </div>
+                    <div class="td">
+                      <p><b>99 999</b> <span class="rating-up">12%</span></p>
+                      <p>share <b>18%</b></p>
+                    </div>
+                    <div class="td">
+                      <p><b>99 999</b> <span class="rating-down">17%</span></p>
+                      <p><b>15%</b> of total</p>
+                    </div>
+                    <div class="td">
+                      <p><b>99 999</b> <span class="rating-up">12%</span></p>
+                      <p>share <b>18%</b></p>
+                    </div>
+                    <div class="td">
+                      <p><b>99 999</b> <span class="rating-down">17%</span></p>
+                      <p><b>15%</b> of total</p>
+                    </div>
+                    <div class="td">
+                      <p><b>99 999</b> <span class="rating-up">12%</span></p>
+                      <p>share <b>18%</b></p>
+                    </div>
+                    <div class="td">
+                      <p><b>99 999</b> <span class="rating-down">17%</span></p>
+                      <p><b>15%</b> of total</p>
+                    </div>
+                    <div class="td">
+                      <p><b>99 999</b> <span class="rating-up">12%</span></p>
+                      <p>share <b>18%</b></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="footer footer-short">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="footer__info">
+            <p class="copyright">© 2020 Firmstat. All Rights Reserved</p>
+            <p>Competitive Analysis Tool For Forex Marketers</p>
+          </div>
+          <div class="footer__links">
+            <div class="footer__policy">
+              <a href="http://firstat.com/">Cookie Policy</a>
+              <a href="http://firstat.com/">Privacy Police</a>
+            </div>
+            <div class="footer__contacts">
+              <a href="mailto:support@firmstat.com" class="mail">support@firmstat.com</a>
+              <a href="#" target="_blank"><img src="img/linkedin.png" alt=""></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+  <script src="js/jquery.min.js"></script>
+  <script src="js/jquery.fancybox.js"></script>
+  <script src="js/sticky-kit.js"></script>
+  <script src="js/common.js"></script>
+</body>
+
+</html>
